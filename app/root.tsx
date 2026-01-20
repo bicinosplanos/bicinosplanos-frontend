@@ -18,8 +18,13 @@ export const links: Route.LinksFunction = () => [
     crossOrigin: "anonymous",
   },
   {
+    rel: "preload",
+    as: "style",
+    href: "https://fonts.googleapis.com/css2?family=Anton&family=Raleway:wght@100..900&display=block",
+  },
+  {
     rel: "stylesheet",
-    href: "https://fonts.googleapis.com/css2?family=Anton&family=Raleway:wght@100..900&display=swap",
+    href: "https://fonts.googleapis.com/css2?family=Anton&family=Raleway:wght@100..900&display=block",
   },
 ];
 
