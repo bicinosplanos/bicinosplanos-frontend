@@ -15,7 +15,7 @@ export function Footer() {
           <div>
             <h4 className="font-semibold mb-3 text-sm">Links</h4>
             <div className="grid grid-cols-2 gap-x-4 gap-y-2">
-              <Link to="/quem-somos" className="text-neutral-300 hover:text-primary-300 transition text-sm">
+              <Link to="/quemsomos" className="text-neutral-300 hover:text-primary-300 transition text-sm">
                 Quem Somos
               </Link>
               <Link to="/blog" className="text-neutral-300 hover:text-primary-300 transition text-sm">

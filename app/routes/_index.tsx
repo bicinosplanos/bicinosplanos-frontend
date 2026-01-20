@@ -1,10 +1,10 @@
-import type { Route } from "./+types/home";
+import type { MetaFunction } from "react-router";
 import { Link } from "react-router";
 import { Header } from "../components/Header";
 import { Footer } from "../components/Footer";
 import { Bike, Leaf, Users } from "lucide-react";
 
-export function meta({}: Route.MetaArgs) {
+export const meta: MetaFunction = () => {
   return [
     { title: "Bici nos Planos MS - Coletivo de Cicloativismo do MS" },
     { name: "description", content: "Promovendo a bicicleta como meio de transporte e ferramenta de transformação social no Mato Grosso do Sul" },
@@ -30,9 +30,9 @@ export default function Home() {
       
       <main className="min-h-screen">
         {/* Hero Section */}
-        <section className="relative bg-gradient-to-br from-primary-600 to-primary-800 text-white h-screen flex items-center">
+        <section className="relative bg-linear-to-br from-primary-600 to-primary-800 text-white h-screen flex items-center">
           <div className="absolute inset-0 bg-cover bg-center opacity-20" style={{ backgroundImage: 'url(/logo.png)' }}></div>
-          <div className="absolute inset-0 bg-gradient-to-br from-primary-600/90 to-primary-800/90"></div>
+          <div className="absolute inset-0 bg-linear-to-br from-primary-600/90 to-primary-800/90"></div>
           <div className="container mx-auto px-4 relative z-10">
             <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12">
               <div className="flex-1 text-left">
@@ -48,7 +48,7 @@ export default function Home() {
                   Promovendo a bicicleta como meio de transporte e ferramenta de transformação social
                 </p>
                 <div className="flex flex-col sm:flex-row gap-3 md:gap-4 items-center md:items-start">
-                  <Link to="/quem-somos" className="bg-secondary-500 text-neutral-900 px-6 sm:px-8 py-3 rounded-lg font-semibold hover:bg-secondary-400 transition text-sm sm:text-base w-full sm:w-auto text-center">
+                  <Link to="/quemsomos" className="bg-secondary-500 text-neutral-900 px-6 sm:px-8 py-3 rounded-lg font-semibold hover:bg-secondary-400 transition text-sm sm:text-base w-full sm:w-auto text-center">
                     Conheça o Coletivo
                   </Link>
                   <Link to="/eventos" className="border-2 border-white px-6 sm:px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-primary-700 transition text-sm sm:text-base w-full sm:w-auto text-center">

@@ -37,8 +37,8 @@ export function HomeHeader() {
           {/* Desktop Nav */}
           <nav className="hidden md:flex gap-6">
             <Link
-              to="/quem-somos"
-              className={`font-heading uppercase text-white hover:text-secondary-300 transition text-sm ${location.pathname === '/quem-somos' ? 'text-secondary-400 border-b-2 border-secondary-400' : ''}`}
+              to="/quemsomos"
+              className={`font-heading uppercase text-white hover:text-secondary-300 transition text-sm ${location.pathname === '/quemsomos' ? 'text-secondary-400 border-b-2 border-secondary-400' : ''}`}
             >
               Quem Somos
             </Link>
@@ -87,8 +87,8 @@ export function HomeHeader() {
         {mobileMenuOpen && (
           <nav className="md:hidden pb-4 flex flex-col gap-4">
             <Link
-              to="/quem-somos"
-              className={`font-heading uppercase text-white hover:text-secondary-300 transition ${location.pathname === '/quem-somos' ? 'text-secondary-400' : ''}`}
+              to="/quemsomos"
+              className={`font-heading uppercase text-white hover:text-secondary-300 transition ${location.pathname === '/quemsomos' ? 'text-secondary-400' : ''}`}
               onClick={() => setMobileMenuOpen(false)}
             >
               Quem Somos

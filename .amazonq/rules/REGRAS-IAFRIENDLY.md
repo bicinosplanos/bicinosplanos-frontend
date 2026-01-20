@@ -280,9 +280,18 @@ export function NomeComponente({ ...props }: NomeComponenteProps) {
 
 **Ao criar qualquer nova página:**
 
-1. **Criar arquivo** em `app/routes/_layout.nome-da-pagina.tsx`
+1. **Criar arquivo** em `app/routes/nomedapagina.tsx` (sem hífens, tudo junto)
 2. **Registrar rota** em `app/routes.ts`
 3. **Atualizar progresso** em PROGRESSO-DESENVOLVIMENTO.md
+
+### Padrão de nomenclatura:
+
+- ✅ **Arquivo**: `nomedapagina.tsx` (tudo junto, sem hífens)
+- ✅ **Rota URL**: `nomedapagina` (tudo junto, sem hífens)
+- ✅ **Exemplos**:
+  - Arquivo: `quemsomos.tsx` → URL: `/quemsomos`
+  - Arquivo: `contato.tsx` → URL: `/contato`
+  - Arquivo: `galeria.tsx` → URL: `/galeria`
 
 ### Estrutura obrigatória:
 
@@ -318,7 +327,7 @@ export default function NomeDaPagina() {
 export default [
   index("routes/_index.tsx"),
   layout("routes/_layout.tsx", [
-    route("nome-da-pagina", "routes/_layout.nome-da-pagina.tsx"),
+    route("nomedapagina", "routes/nomedapagina.tsx"),
   ]),
   route("*", "routes/$.tsx"),
 ] satisfies RouteConfig;
@@ -327,6 +336,8 @@ export default [
 ## Nunca:
 
 - ❌ Criar página sem registrar em routes.ts
+- ❌ Usar hífens no nome do arquivo (use tudo junto)
+- ❌ Usar prefixo `_layout.` no nome do arquivo
 - ❌ Omitir PageBanner e Breadcrumb
 - ❌ Esquecer meta tags SEO
 - ❌ Não atualizar o progresso

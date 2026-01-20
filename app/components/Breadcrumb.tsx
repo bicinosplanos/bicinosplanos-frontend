@@ -1,20 +1,14 @@
 import { Link, useLocation } from "react-router";
 import { ChevronRight, Home } from "lucide-react";
+import { SITE_ROUTES } from "~/routes";
 
 export function Breadcrumb() {
   const location = useLocation();
   const pathnames = location.pathname.split("/").filter((x) => x);
 
-  const breadcrumbNames: Record<string, string> = {
-    "quem-somos": "Quem Somos",
-    "timeline": "Linha do Tempo",
-    "eventos": "Eventos",
-    "blog": "Blog",
-    "galeria": "Galeria",
-    "contato": "Contato",
-    "identidade": "Identidade Visual",
-    "teste": "Página de Teste",
-  };
+  const breadcrumbNames = Object.fromEntries(
+    SITE_ROUTES.map(route => [route.path, route.label])
+  );
 
   return (
     <nav className="bg-primary-50 py-3">
