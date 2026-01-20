@@ -166,6 +166,9 @@ export default function NotFound() {
             <Link to="/contato" className="text-primary-600 hover:text-primary-700 font-bold transition">
               Contato
             </Link>
+            <Link to="/links" className="text-primary-600 hover:text-primary-700 font-bold transition">
+              Links
+            </Link>
           </nav>
         </div>
       </div>

@@ -38,6 +38,7 @@
 - [x] Blog / Notícias ✅
 - [x] Galeria ✅
 - [x] Contato / Participação ✅
+- [x] Linktree (/links) ✅
 
 ### SEO e Performance
 - [x] Meta tags configuradas ✅
@@ -278,13 +279,13 @@
 
 ## 📊 Progresso Geral
 
-**Total de Tarefas:** 123
-**Concluídas:** 32
-**Progresso:** ~26%
+**Total de Tarefas:** 124
+**Concluídas:** 33
+**Progresso:** ~27%
 
 ### Status por Sprint
 - ✅ Sprint 0: 86% (12/14)
-- ✅ Sprint 1: 100% (20/20)
+- ✅ Sprint 1: 100% (21/21)
 - ⏳ Sprint 2: 0% (0/6)
 - ⏳ Sprint 3: 0% (0/7)
 - ⏳ Sprint 4: 0% (0/25)

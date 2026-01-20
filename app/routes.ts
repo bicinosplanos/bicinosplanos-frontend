@@ -9,6 +9,7 @@ export const SITE_ROUTES = [
   { path: "contato", label: "Contato" },
   { path: "identidade", label: "Identidade Visual" },
   { path: "teste", label: "Página de Teste" },
+  { path: "links", label: "Links" },
 ] as const;
 
 export default [

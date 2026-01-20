@@ -483,12 +483,52 @@ SUMÁRIO
 - `cs` - Commit simples
 - `ccp` - Commit completo com push
 - `csp` - Commit simples com push
+- `ccf` - Commit completo fracionado (para múltiplas modificações)
 - `dc` - Desenvolvimento Continuar (consulta PROGRESSO-DESENVOLVIMENTO.md e sugere próxima tarefa pendente)
 - `ap` - Atualizar Progresso (abre PROGRESSO-DESENVOLVIMENTO.md para atualização)
 - `ad` - Atualizar Documentação (abre DOCUMENTACAO-GERAL.md para atualização)
 - `la` - Listar Atalhos (exibe todos os atalhos disponíveis)
 
 *Mais atalhos serão adicionados ao longo do desenvolvimento.*
+
+### Priorização de Commits
+
+**Ordem de prioridade para títulos de commit:**
+
+1. **Criação** - Arquivos/rotas/componentes novos
+2. **Refatoração** - Melhorias em código existente  
+3. **Implementação** - Novas funcionalidades
+4. **Correções** - Fixes
+5. **Documentação** - Docs
+
+**Quando houver múltiplas modificações:**
+- Título deve priorizar o tipo mais importante
+- Resumir minimamente todas as mudanças no título
+- Detalhar tudo no corpo do commit
+
+**Exemplo:**
+```bash
+git commit -m "feat: adiciona página Contato, refatora Header e implementa validação
+
+- Cria página Contato com formulário
+- Registra rota em routes.ts
+- Refatora Header para melhor responsividade
+- Implementa validação de campos obrigatórios
+- Atualiza documentação"
+```
+
+**Ideal: Commits de responsabilidade única**
+- Sempre que possível, separar commits por contexto
+- Um commit para criação de páginas
+- Um commit para refatoração
+- Um commit para implementação de features
+- Um commit para documentação
+
+**Quando usar `ccf` (Commit Completo Fracionado):**
+- Muitas modificações acumuladas
+- Modificações abrangem múltiplos contextos
+- Necessário organizar histórico do Git
+- O comando `ccf` cria múltiplos commits separados automaticamente
 
 ---
 
@@ -531,19 +571,23 @@ SUMÁRIO
 **Passo a passo obrigatório:**
 
 1. **Criar o arquivo da página** em `app/routes/`
-   - Nomenclatura: `_layout.nome-da-pagina.tsx`
-   - Exemplo: `_layout.timeline.tsx`
+   - Nomenclatura: `nome-da-pagina.tsx` (sem prefixo `_layout.`)
+   - Exemplo: `timeline.tsx`, `links.tsx`
 
-2. **Registrar a rota** em `app/routes.ts`
+2. **Registrar a rota em SITE_ROUTES** em `app/routes.ts`
    ```tsx
-   export default [
-     index("routes/home.tsx"),
-     layout("routes/_layout.tsx", [
-       route("timeline", "routes/_layout.timeline.tsx"), // Adicionar aqui
-     ]),
-     route("*", "routes/$.tsx"),
-   ] satisfies RouteConfig;
+   export const SITE_ROUTES = [
+     { path: "quemsomos", label: "Quem Somos" },
+     { path: "timeline", label: "Linha do Tempo" },
+     { path: "links", label: "Links" }, // Adicionar aqui
+   ] as const;
    ```
+   
+   **⚠️ IMPORTANTE:**
+   - **SEMPRE adicionar em SITE_ROUTES** para que a página apareça nas sugestões da 404
+   - **NUNCA registrar rotas manualmente** fora do SITE_ROUTES
+   - O array SITE_ROUTES é usado para gerar as rotas automaticamente
+   - Também alimenta o algoritmo de sugestões inteligentes da página 404
 
 3. **Estrutura mínima da página**
    ```tsx
@@ -581,9 +625,10 @@ SUMÁRIO
    - Atualizar contadores
 
 **Nunca:**
-- ❌ Criar página sem registrar em routes.ts
+- ❌ Criar página sem adicionar em SITE_ROUTES
+- ❌ Registrar rotas manualmente com `route()` fora do SITE_ROUTES
 - ❌ Esquecer de reiniciar o servidor
-- ❌ Omitir PageBanner e Breadcrumb
+- ❌ Omitir PageBanner e Breadcrumb (exceto páginas especiais como Linktree)
 - ❌ Esquecer de atualizar o progresso
 
 ---
@@ -1946,3 +1991,46 @@ Isso aqui **já é padrão de projeto sério**, pronto para:
 - Botão de envio full-width
 - Cards informativos com ícones
 - Banner de destaque para eventos
+
+---
+
+## Página Linktree
+
+**Localização:** `app/routes/links.tsx`
+**Rota:** `/links`
+
+**Funcionalidades:**
+- Página estilo Linktree para compartilhamento em redes sociais
+- Lista centralizada de links importantes do coletivo
+- Design minimalista e focado
+- Não usa PageBanner nem Breadcrumb (página standalone)
+- Meta tags completas para SEO
+
+**Ícones utilizados:**
+- Globe (Lucide React) - Site oficial
+- Instagram (Lucide React) - Instagram
+- Facebook (Lucide React) - Facebook
+- Youtube (Lucide React) - YouTube
+- Mail (Lucide React) - E-mail
+
+**Links incluídos:**
+1. Site Oficial (link interno)
+2. Instagram (@bicinosplanos)
+3. Facebook (página do coletivo)
+4. YouTube (canal de vídeos)
+5. E-mail (contato@bicinosplanos.com.br)
+
+**Características:**
+- Fundo com gradiente (primary-500 → primary-600 → accent-600)
+- Logo centralizado com fundo branco e sombra
+- Cards brancos com hover effect (scale + shadow)
+- Ícones com fundo colorido (primary-100)
+- Cada link com título e descrição
+- Links externos abrem em nova aba
+- Totalmente responsivo (mobile-first)
+- Rodapé com slogan do coletivo
+
+**Observações:**
+- Ideal para bio do Instagram e outras redes sociais
+- URLs das redes sociais devem ser atualizadas com os links reais
+- Pode ser facilmente expandido com mais links

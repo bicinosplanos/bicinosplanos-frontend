@@ -323,19 +323,34 @@ export default function NomeDaPagina() {
 
 ## Registro em routes.ts:
 
+**⚠️ IMPORTANTE: SEMPRE adicionar em SITE_ROUTES**
+
 ```tsx
+export const SITE_ROUTES = [
+  { path: "quemsomos", label: "Quem Somos" },
+  { path: "timeline", label: "Linha do Tempo" },
+  { path: "nomedapagina", label: "Nome da Página" }, // Adicionar aqui
+] as const;
+
 export default [
   index("routes/_index.tsx"),
-  layout("routes/_layout.tsx", [
-    route("nomedapagina", "routes/nomedapagina.tsx"),
-  ]),
+  layout("routes/_layout.tsx", 
+    SITE_ROUTES.map(r => route(r.path, `routes/${r.path}.tsx`))
+  ),
   route("*", "routes/$.tsx"),
 ] satisfies RouteConfig;
 ```
 
+**Por que adicionar em SITE_ROUTES?**
+- As rotas são geradas automaticamente a partir deste array
+- A página 404 usa este array para sugestões inteligentes
+- Quando usuário digitar URL errada, o sistema sugere páginas similares
+- Exemplo: `/link` sugere `/links`, `/evento` sugere `/eventos`
+
 ## Nunca:
 
-- ❌ Criar página sem registrar em routes.ts
+- ❌ Criar página sem adicionar em SITE_ROUTES
+- ❌ Registrar rotas manualmente com `route()` fora do SITE_ROUTES
 - ❌ Usar hífens no nome do arquivo (use tudo junto)
 - ❌ Usar prefixo `_layout.` no nome do arquivo
 - ❌ Omitir PageBanner e Breadcrumb
@@ -356,6 +371,7 @@ export default [
 - **cs** → Commit simples
 - **ccp** → Commit completo detalhado com push
 - **csp** → Commit simples com push
+- **ccf** → Commit completo fracionado (para múltiplas modificações)
 
 ### Atalhos de Desenvolvimento
 - **dc** → Desenvolvimento Continuar (consulta `/app/docs/PROGRESSO-DESENVOLVIMENTO.md` e sugere próxima tarefa pendente)
@@ -425,6 +441,107 @@ git push
 3. Agrupar por categoria (Git, Desenvolvimento)
 4. Formato claro e organizado
 
+### ccf (Commit Completo Fracionado)
+**Usar quando houver muitas modificações para commitar.**
+
+1. Analisar todas as modificações pendentes
+2. Agrupar por responsabilidade/contexto
+3. Criar múltiplos commits separados
+4. Cada commit deve ter escopo único e bem definido
+
+**Ordem de prioridade para commits:**
+1. **Criação** (arquivos/rotas adicionadas)
+2. **Refatoração** (melhorias de código existente)
+3. **Implementação** (novas funcionalidades)
+4. **Correções** (fixes)
+5. **Documentação** (docs)
+
+**Exemplo de fracionamento:**
+```bash
+# Commit 1 - Criação
+git add app/routes/novapagina.tsx app/routes.ts
+git commit -m "feat: adiciona página Nova Página e registra rota"
+
+# Commit 2 - Refatoração
+git add app/components/Header.tsx
+git commit -m "refactor: melhora responsividade do Header"
+
+# Commit 3 - Implementação
+git add app/components/NovoComponente.tsx
+git commit -m "feat: implementa componente NovoComponente com validação"
+
+# Commit 4 - Documentação
+git add app/docs/PROGRESSO-DESENVOLVIMENTO.md app/docs/DOCUMENTACAO-GERAL.md
+git commit -m "docs: atualiza progresso e documentação geral"
+```
+
+## Priorização de Títulos de Commit
+
+**Quando houver múltiplas modificações no mesmo commit:**
+
+### Ordem de prioridade no título:
+1. **Criação** - Arquivos/rotas/componentes novos
+2. **Refatoração** - Melhorias em código existente
+3. **Implementação** - Novas funcionalidades
+
+### Formato do título:
+- Priorizar o tipo de mudança mais importante
+- Resumir minimamente todas as mudanças
+- Detalhar no corpo do commit
+
+### Exemplos:
+
+**✅ Bom - Criação prioritária:**
+```bash
+git commit -m "feat: adiciona página Contato, refatora Header e implementa validação de formulário
+
+- Cria página Contato com formulário
+- Registra rota em routes.ts
+- Refatora Header para melhor responsividade
+- Implementa validação de campos obrigatórios
+- Atualiza documentação"
+```
+
+**✅ Bom - Refatoração prioritária:**
+```bash
+git commit -m "refactor: melhora responsividade de componentes e implementa lazy loading
+
+- Refatora Header, Footer e PageBanner
+- Implementa lazy loading de imagens
+- Adiciona breakpoints mobile-first
+- Atualiza documentação de componentes"
+```
+
+**❌ Ruim - Título genérico:**
+```bash
+git commit -m "feat: várias melhorias"
+```
+
+**❌ Ruim - Título incompleto:**
+```bash
+git commit -m "feat: adiciona página Contato"
+# Não menciona refatoração e implementação
+```
+
+## Ideal: Commits de Responsabilidade Única
+
+**SEMPRE que possível, separar commits por responsabilidade:**
+
+- ✅ Um commit para criação de páginas
+- ✅ Um commit para refatoração
+- ✅ Um commit para implementação de features
+- ✅ Um commit para documentação
+
+**Quando usar ccf:**
+- Quando houver muitas modificações acumuladas
+- Quando modificações abrangem múltiplos contextos
+- Quando for necessário organizar histórico do Git
+
+**Quando NÃO usar ccf:**
+- Modificações pequenas e relacionadas
+- Mudanças de um único contexto
+- Commits que já seguem responsabilidade única
+
 ## Padrões de mensagem:
 
 - ✅ **feat:** Nova funcionalidade
@@ -439,3 +556,6 @@ git push
 - ❌ Fazer commit sem mensagem descritiva
 - ❌ Usar mensagens genéricas como "update" ou "fix"
 - ❌ Esquecer de adicionar os arquivos (git add)
+- ❌ Misturar múltiplas responsabilidades em um único commit quando possível fracionar
+- ❌ Ignorar a ordem de prioridade no título do commit
+- ❌ Omitir detalhes no corpo quando houver múltiplas mudanças
