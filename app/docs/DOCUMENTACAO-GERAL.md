@@ -457,6 +457,69 @@ SUMÁRIO
 
 ## ⚠️ REGRAS DE DESENVOLVIMENTO
 
+### Criação de Novas Páginas
+**SEMPRE seguir este fluxo ao criar uma nova página.**
+
+**Passo a passo obrigatório:**
+
+1. **Criar o arquivo da página** em `app/routes/`
+   - Nomenclatura: `_layout.nome-da-pagina.tsx`
+   - Exemplo: `_layout.timeline.tsx`
+
+2. **Registrar a rota** em `app/routes.ts`
+   ```tsx
+   export default [
+     index("routes/home.tsx"),
+     layout("routes/_layout.tsx", [
+       route("timeline", "routes/_layout.timeline.tsx"), // Adicionar aqui
+     ]),
+     route("*", "routes/$.tsx"),
+   ] satisfies RouteConfig;
+   ```
+
+3. **Estrutura mínima da página**
+   ```tsx
+   import type { MetaFunction } from "react-router";
+   import { PageBanner } from "~/components/PageBanner";
+   import { Breadcrumb } from "~/components/Breadcrumb";
+
+   export const meta: MetaFunction = () => {
+     return [
+       { title: "Título - Bici nos Planos MS" },
+       { name: "description", content: "Descrição" },
+       // ... Open Graph e Twitter Card
+     ];
+   };
+
+   export default function NomeDaPagina() {
+     return (
+       <>
+         <PageBanner title="Título" subtitle="Subtítulo" />
+         <Breadcrumb />
+         <div className="container mx-auto px-4 py-12">
+           {/* Conteúdo */}
+         </div>
+       </>
+     );
+   }
+   ```
+
+4. **Reiniciar o servidor** após criar a rota
+   - Parar o servidor (Ctrl+C)
+   - Rodar `npm run dev` novamente
+
+5. **Atualizar PROGRESSO-DESENVOLVIMENTO.md**
+   - Marcar a página como concluída
+   - Atualizar contadores
+
+**Nunca:**
+- ❌ Criar página sem registrar em routes.ts
+- ❌ Esquecer de reiniciar o servidor
+- ❌ Omitir PageBanner e Breadcrumb
+- ❌ Esquecer de atualizar o progresso
+
+---
+
 ### SEO e Meta Tags
 **SEMPRE adicionar meta tags em todas as páginas.**
 

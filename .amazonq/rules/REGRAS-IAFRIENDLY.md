@@ -270,3 +270,65 @@ export function NomeComponente({ ...props }: NomeComponenteProps) {
 - ❌ Colocar Breadcrumb antes do PageBanner
 - ❌ Omitir o Breadcrumb em páginas internas
 - ❌ Omitir o PageBanner em páginas internas
+
+
+---
+
+# ⚠️ REGRA OBRIGATÓRIA: Criação de Novas Páginas
+
+## SEMPRE seguir o fluxo completo
+
+**Ao criar qualquer nova página:**
+
+1. **Criar arquivo** em `app/routes/_layout.nome-da-pagina.tsx`
+2. **Registrar rota** em `app/routes.ts`
+3. **Reiniciar servidor** (npm run dev)
+4. **Atualizar progresso** em PROGRESSO-DESENVOLVIMENTO.md
+
+## Estrutura obrigatória:
+
+```tsx
+import type { MetaFunction } from "react-router";
+import { PageBanner } from "~/components/PageBanner";
+import { Breadcrumb } from "~/components/Breadcrumb";
+
+export const meta: MetaFunction = () => {
+  return [
+    { title: "Título - Bici nos Planos MS" },
+    { name: "description", content: "Descrição" },
+    // Open Graph e Twitter Card completos
+  ];
+};
+
+export default function NomeDaPagina() {
+  return (
+    <>
+      <PageBanner title="Título" subtitle="Subtítulo" />
+      <Breadcrumb />
+      <div className="container mx-auto px-4 py-12">
+        {/* Conteúdo */}
+      </div>
+    </>
+  );
+}
+```
+
+## Registro em routes.ts:
+
+```tsx
+export default [
+  index("routes/home.tsx"),
+  layout("routes/_layout.tsx", [
+    route("nome-da-pagina", "routes/_layout.nome-da-pagina.tsx"),
+  ]),
+  route("*", "routes/$.tsx"),
+] satisfies RouteConfig;
+```
+
+## Nunca:
+
+- ❌ Criar página sem registrar em routes.ts
+- ❌ Esquecer de reiniciar o servidor
+- ❌ Omitir PageBanner e Breadcrumb
+- ❌ Esquecer meta tags SEO
+- ❌ Não atualizar o progresso
