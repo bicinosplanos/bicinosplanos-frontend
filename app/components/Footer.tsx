@@ -27,6 +27,9 @@ export function Footer() {
               <Link to="/blog" className="text-neutral-300 hover:text-primary-300 transition">
                 Blog
               </Link>
+              <Link to="/identidade" className="text-neutral-300 hover:text-primary-300 transition">
+                Identidade Visual
+              </Link>
             </nav>
           </div>
           

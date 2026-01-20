@@ -469,6 +469,105 @@ import { Menu, Calendar, MapPin } from "lucide-react";
 <Menu className="w-6 h-6" />
 ```
 
+### Breadcrumb
+**Componente de navegação hierárquica.**
+
+**Localização:** `app/components/Breadcrumb.tsx`
+
+**Funcionalidades:**
+- Navegação hierárquica automática baseada na URL
+- Ícones Lucide React (Home, ChevronRight)
+- Responsivo (oculta texto "Início" em mobile)
+- Mapeamento de slugs para nomes amigáveis
+
+```tsx
+import { Breadcrumb } from "~/components/Breadcrumb";
+
+<Breadcrumb />
+```
+
+### PageBanner
+**Banner de cabeçalho para páginas internas.**
+
+**Localização:** `app/components/PageBanner.tsx`
+
+**Props:**
+- `title` (obrigatório) - Título da página
+- `subtitle` - Subtítulo opcional
+
+```tsx
+import { PageBanner } from "~/components/PageBanner";
+
+<PageBanner 
+  title="Quem Somos" 
+  subtitle="Conheça nossa história"
+/>
+```
+
+### Cards
+**Componente Card genérico e reutilizável.**
+
+**Localização:** `app/components/Card.tsx`
+
+**Variantes disponíveis:**
+- `default` - Fundo branco com borda neutra
+- `primary` - Fundo verde claro (primary-50)
+- `secondary` - Fundo amarelo claro (secondary-50)
+- `accent` - Fundo verde claro alternativo (accent-50)
+
+**Props:**
+- `title` (obrigatório) - Título do card
+- `description` - Descrição opcional
+- `image` - URL da imagem (aspect-ratio 16:9)
+- `imageAlt` - Texto alternativo da imagem
+- `icon` - Ícone Lucide React
+- `link` - Transforma o card em link clicável
+- `variant` - Variante de cor
+- `children` - Conteúdo customizado
+
+```tsx
+import { Card } from "~/components/Card";
+import { Bike } from "lucide-react";
+
+<Card
+  title="Título do Card"
+  description="Descrição do card"
+  icon={<Bike className="w-8 h-8" />}
+  variant="primary"
+  link="/destino"
+/>
+```
+
+### Botões
+**Padrões de botões com estados interativos.**
+
+**Botão Primary:**
+```tsx
+<button className="bg-primary-600 hover:bg-primary-700 active:bg-primary-800 text-white px-6 py-3 rounded-lg font-bold transition cursor-pointer">
+  Botão Primary
+</button>
+```
+
+**Botão Secondary:**
+```tsx
+<button className="bg-secondary-500 hover:bg-secondary-600 active:bg-secondary-700 text-neutral-900 px-6 py-3 rounded-lg font-bold transition cursor-pointer">
+  Botão Secondary
+</button>
+```
+
+**Botão Outline:**
+```tsx
+<button className="bg-white hover:bg-neutral-50 active:bg-neutral-100 text-primary-600 border-2 border-primary-600 px-6 py-3 rounded-lg font-bold transition cursor-pointer">
+  Botão Outline
+</button>
+```
+
+**Regras obrigatórias:**
+- Sempre incluir `cursor-pointer`
+- Sempre incluir estados `hover:` e `active:`
+- Sempre usar `transition` para animações suaves
+- Sempre usar `font-bold` para texto de botões
+
 ---
 
 # 📄 BASES TÉCNICAS DE CONSTRUÇÃO
