@@ -43,3 +43,31 @@ import { Menu, Calendar, MapPin } from "lucide-react";
 - ❌ Usar emojis em componentes
 - ❌ Usar SVGs customizados
 - ❌ Usar outras bibliotecas de ícones
+
+
+---
+
+# ⚠️ REGRA OBRIGATÓRIA: Documentação de Progresso
+
+## SEMPRE atualizar PROGRESSO-DESENVOLVIMENTO.md
+
+**Ao modificar, criar ou concluir qualquer funcionalidade:**
+
+1. Abrir `/app/docs/PROGRESSO-DESENVOLVIMENTO.md`
+2. Marcar como concluído `[x]` a tarefa correspondente
+3. Atualizar percentual de progresso da Sprint
+4. Atualizar progresso geral
+
+## Exemplos de atualizações:
+
+```markdown
+- [x] Componente de Header/Navegação ✅
+- [x] Home (página inicial) ✅
+- [x] Página Quem Somos ✅
+```
+
+## Nunca:
+
+- ❌ Criar/modificar código sem atualizar o progresso
+- ❌ Esquecer de marcar tarefas concluídas
+- ❌ Deixar documentação desatualizada

@@ -18,13 +18,13 @@
 ## 🎨 Sprint 1 - Frontend Base
 
 ### Estrutura e Layout
-- [ ] Componente de Header/Navegação
-- [ ] Componente de Footer
+- [x] Componente de Header/Navegação ✅
+- [x] Componente de Footer ✅
 - [ ] Layout base (_layout.tsx)
-- [ ] Sistema de rotas configurado
+- [x] Sistema de rotas configurado ✅
 
 ### Páginas Públicas
-- [ ] Home (página inicial)
+- [x] Home (página inicial) ✅
 - [ ] Quem Somos / Ideologia
 - [ ] Linha do Tempo
 - [ ] Eventos e Ações
@@ -266,12 +266,12 @@
 ## 📊 Progresso Geral
 
 **Total de Tarefas:** 120+
-**Concluídas:** 10
-**Progresso:** ~8%
+**Concluídas:** 14
+**Progresso:** ~12%
 
 ### Status por Sprint
 - ✅ Sprint 0: 80% (10/12)
-- ⏳ Sprint 1: 0% (0/18)
+- ⏳ Sprint 1: 22% (4/18)
 - ⏳ Sprint 2: 0% (0/6)
 - ⏳ Sprint 3: 0% (0/7)
 - ⏳ Sprint 4: 0% (0/25)
