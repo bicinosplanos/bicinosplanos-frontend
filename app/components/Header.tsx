@@ -36,7 +36,7 @@ export function Header() {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           <Link to="/" className={logoClass}>
-            <img src="/logo.png" alt="Bici nos Planos MS" className="h-12 w-12" />
+            <img src="/logo-simplify-sm.png" alt="Bici nos Planos MS" className="h-12 w-12" style={{ filter: 'drop-shadow(4px 4px 2px rgba(0,0,0,0.2))' }} />
             <span className="font-heading text-xl sm:text-2xl uppercase text-white">Bici nos Planos <span className="font-body font-thin">MS</span></span>
           </Link>
           

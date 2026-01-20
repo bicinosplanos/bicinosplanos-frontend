@@ -341,3 +341,68 @@ export default [
 - ❌ Omitir PageBanner e Breadcrumb
 - ❌ Esquecer meta tags SEO
 - ❌ Não atualizar o progresso
+
+
+---
+
+# Atalhos de Commit
+
+## Atalhos disponíveis para Git
+
+**Quando o usuário solicitar:**
+
+- **cc** → Commit completo e detalhado
+- **cs** → Commit simples
+- **ccp** → Commit completo detalhado com push
+- **csp** → Commit simples com push
+
+## Comportamento:
+
+### cc (Commit Completo)
+```bash
+git add .
+git commit -m "feat: descrição detalhada da funcionalidade
+
+- Detalhe 1
+- Detalhe 2
+- Detalhe 3"
+```
+
+### cs (Commit Simples)
+```bash
+git add .
+git commit -m "feat: descrição breve"
+```
+
+### ccp (Commit Completo com Push)
+```bash
+git add .
+git commit -m "feat: descrição detalhada da funcionalidade
+
+- Detalhe 1
+- Detalhe 2
+- Detalhe 3"
+git push
+```
+
+### csp (Commit Simples com Push)
+```bash
+git add .
+git commit -m "feat: descrição breve"
+git push
+```
+
+## Padrões de mensagem:
+
+- ✅ **feat:** Nova funcionalidade
+- ✅ **fix:** Correção de bug
+- ✅ **docs:** Atualização de documentação
+- ✅ **style:** Mudanças de estilo/formatação
+- ✅ **refactor:** Refatoração de código
+- ✅ **chore:** Tarefas gerais/manutenção
+
+## Nunca:
+
+- ❌ Fazer commit sem mensagem descritiva
+- ❌ Usar mensagens genéricas como "update" ou "fix"
+- ❌ Esquecer de adicionar os arquivos (git add)

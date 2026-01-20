@@ -31,7 +31,7 @@ export default function Home() {
       <main className="min-h-screen">
         {/* Hero Section */}
         <section className="relative bg-linear-to-br from-primary-600 to-primary-800 text-white h-screen flex items-center">
-          <div className="absolute inset-0 bg-cover bg-center opacity-20" style={{ backgroundImage: 'url(/logo.png)' }}></div>
+          <div className="absolute inset-0 bg-cover bg-center opacity-20" style={{ backgroundImage: 'url(/logo-hq.png)' }}></div>
           <div className="absolute inset-0 bg-linear-to-br from-primary-600/90 to-primary-800/90"></div>
           <div className="container mx-auto px-4 relative z-10">
             <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12">
