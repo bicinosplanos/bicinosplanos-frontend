@@ -457,6 +457,43 @@ SUMÁRIO
 
 ## ⚠️ REGRAS DE DESENVOLVIMENTO
 
+### SEO e Meta Tags
+**SEMPRE adicionar meta tags em todas as páginas.**
+
+**Meta tags obrigatórias:**
+- title (com sufixo "- Bici nos Planos MS")
+- description
+- Open Graph (og:title, og:description, og:image, og:type)
+- Twitter Card (twitter:card, twitter:title, twitter:description, twitter:image)
+- Sempre usar /logo.png como imagem padrão
+
+```tsx
+import type { MetaFunction } from "react-router";
+
+export const meta: MetaFunction = () => {
+  return [
+    { title: "Título - Bici nos Planos MS" },
+    { name: "description", content: "Descrição da página" },
+    { property: "og:title", content: "Título - Bici nos Planos MS" },
+    { property: "og:description", content: "Descrição da página" },
+    { property: "og:image", content: "/logo.png" },
+    { property: "og:type", content: "website" },
+    { name: "twitter:card", content: "summary_large_image" },
+    { name: "twitter:title", content: "Título - Bici nos Planos MS" },
+    { name: "twitter:description", content: "Descrição da página" },
+    { name: "twitter:image", content: "/logo.png" },
+  ];
+};
+```
+
+### Componentização
+**SEMPRE componentizar elementos reutilizáveis.**
+
+- Criar componentes para seções repetidas
+- Documentar em DOCUMENTACAO-GERAL.md (localização, props, exemplo)
+- Marcar no PROGRESSO-DESENVOLVIMENTO.md
+- Sempre usar TypeScript com interfaces tipadas
+
 ### Ícones
 **SEMPRE usar Lucide React para ícones no projeto.**
 

@@ -29,7 +29,7 @@
 
 ### Páginas Públicas
 - [x] Home (página inicial) ✅
-- [ ] Quem Somos / Ideologia
+- [x] Quem Somos / Ideologia ✅
 - [ ] Linha do Tempo
 - [ ] Eventos e Ações
 - [ ] Blog / Notícias
@@ -43,6 +43,11 @@
 - [ ] Robots.txt
 - [ ] Otimização de imagens
 - [ ] Lazy loading
+
+### Componentes Criados
+- [x] Breadcrumb ✅
+- [x] Card ✅
+- [x] PageBanner ✅
 
 ---
 
@@ -270,12 +275,12 @@
 ## 📊 Progresso Geral
 
 **Total de Tarefas:** 120+
-**Concluídas:** 19
-**Progresso:** ~16%
+**Concluídas:** 20
+**Progresso:** ~17%
 
 ### Status por Sprint
 - ✅ Sprint 0: 80% (10/12)
-- ⏳ Sprint 1: 50% (9/18)
+- ⏳ Sprint 1: 56% (10/18)
 - ⏳ Sprint 2: 0% (0/6)
 - ⏳ Sprint 3: 0% (0/7)
 - ⏳ Sprint 4: 0% (0/25)

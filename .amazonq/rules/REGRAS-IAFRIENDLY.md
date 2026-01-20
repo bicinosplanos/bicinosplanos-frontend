@@ -137,3 +137,104 @@ import { Menu, Calendar, MapPin } from "lucide-react";
 - ❌ Usar cores fora da paleta definida
 - ❌ Criar estilos que fujam da identidade visual
 - ❌ Ignorar os padrões de componentes estabelecidos
+
+
+# ⚠️ REGRA OBRIGATÓRIA: SEO e Compartilhamento
+
+## SEMPRE adicionar meta tags em TODAS as páginas
+
+**Ao criar qualquer página:**
+
+1. Adicionar meta tags básicas (title, description)
+2. Adicionar Open Graph tags para compartilhamento em redes sociais
+3. Adicionar Twitter Card tags
+4. Incluir logo do projeto nas meta tags de imagem
+
+## Meta tags obrigatórias:
+
+```tsx
+import type { MetaFunction } from "react-router";
+
+export const meta: MetaFunction = () => {
+  return [
+    { title: "Título da Página - Bici nos Planos MS" },
+    { name: "description", content: "Descrição clara e objetiva da página" },
+    
+    // Open Graph
+    { property: "og:title", content: "Título da Página - Bici nos Planos MS" },
+    { property: "og:description", content: "Descrição clara e objetiva da página" },
+    { property: "og:image", content: "/logo.png" },
+    { property: "og:type", content: "website" },
+    
+    // Twitter Card
+    { name: "twitter:card", content: "summary_large_image" },
+    { name: "twitter:title", content: "Título da Página - Bici nos Planos MS" },
+    { name: "twitter:description", content: "Descrição clara e objetiva da página" },
+    { name: "twitter:image", content: "/logo.png" },
+  ];
+};
+```
+
+## Nunca:
+
+- ❌ Criar página sem meta tags
+- ❌ Esquecer Open Graph tags
+- ❌ Usar descrições genéricas
+- ❌ Omitir a imagem (logo) nas meta tags
+
+
+---
+
+# ⚠️ REGRA OBRIGATÓRIA: Componentização
+
+## SEMPRE componentizar quando fizer sentido
+
+**Ao criar páginas:**
+
+1. Identificar seções reutilizáveis
+2. Criar componentes para elementos repetidos
+3. Documentar componentes criados em DOCUMENTACAO-GERAL.md
+4. Marcar componentes no PROGRESSO-DESENVOLVIMENTO.md
+
+## Quando componentizar:
+
+- ✅ Seções que aparecem em múltiplas páginas
+- ✅ Elementos com lógica complexa
+- ✅ Padrões visuais repetidos
+- ✅ Cards, banners, formulários, listas
+
+## Estrutura de componente:
+
+```tsx
+// app/components/NomeComponente.tsx
+import { ReactNode } from "react";
+
+interface NomeComponenteProps {
+  // Props tipadas
+}
+
+export function NomeComponente({ ...props }: NomeComponenteProps) {
+  return (
+    // JSX do componente
+  );
+}
+```
+
+## Documentação obrigatória:
+
+1. Adicionar em DOCUMENTACAO-GERAL.md:
+   - Localização do arquivo
+   - Props disponíveis
+   - Exemplo de uso
+   - Variantes (se houver)
+
+2. Adicionar em PROGRESSO-DESENVOLVIMENTO.md:
+   - Marcar como concluído na Sprint correspondente
+   - Atualizar contadores de progresso
+
+## Nunca:
+
+- ❌ Criar componente sem documentar
+- ❌ Duplicar código que poderia ser componentizado
+- ❌ Esquecer de marcar no progresso
+- ❌ Omitir tipagem TypeScript
