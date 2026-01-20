@@ -16,19 +16,19 @@ export function Header() {
           </Link>
           
           <nav className="hidden md:flex gap-6">
-            <Link to="/quem-somos" className={`font-heading uppercase hover:text-secondary-300 transition text-sm ${location.pathname === '/quem-somos' ? 'text-secondary-400 border-b-2 border-secondary-400' : ''}`}>
+            <Link to="/quem-somos" className={`font-heading uppercase hover:text-secondary-300 transition text-sm tracking-wider ${location.pathname === '/quem-somos' ? 'text-secondary-400 border-b-2 border-secondary-400' : ''}`}>
               Quem Somos
             </Link>
-            <Link to="/timeline" className={`font-heading uppercase hover:text-secondary-300 transition text-sm ${location.pathname === '/timeline' ? 'text-secondary-400 border-b-2 border-secondary-400' : ''}`}>
+            <Link to="/timeline" className={`font-heading uppercase hover:text-secondary-300 transition text-sm tracking-wider ${location.pathname === '/timeline' ? 'text-secondary-400 border-b-2 border-secondary-400' : ''}`}>
               Linha do Tempo
             </Link>
-            <Link to="/eventos" className={`font-heading uppercase hover:text-secondary-300 transition text-sm ${location.pathname === '/eventos' ? 'text-secondary-400 border-b-2 border-secondary-400' : ''}`}>
+            <Link to="/eventos" className={`font-heading uppercase hover:text-secondary-300 transition text-sm tracking-wider ${location.pathname === '/eventos' ? 'text-secondary-400 border-b-2 border-secondary-400' : ''}`}>
               Eventos
             </Link>
-            <Link to="/blog" className={`font-heading uppercase hover:text-secondary-300 transition text-sm ${location.pathname === '/blog' ? 'text-secondary-400 border-b-2 border-secondary-400' : ''}`}>
+            <Link to="/blog" className={`font-heading uppercase hover:text-secondary-300 transition text-sm tracking-wider ${location.pathname === '/blog' ? 'text-secondary-400 border-b-2 border-secondary-400' : ''}`}>
               Blog
             </Link>
-            <Link to="/contato" className={`font-heading uppercase hover:text-secondary-300 transition text-sm ${location.pathname === '/contato' ? 'text-secondary-400 border-b-2 border-secondary-400' : ''}`}>
+            <Link to="/contato" className={`font-heading uppercase hover:text-secondary-300 transition text-sm tracking-wider ${location.pathname === '/contato' ? 'text-secondary-400 border-b-2 border-secondary-400' : ''}`}>
               Contato
             </Link>
           </nav>
@@ -45,35 +45,35 @@ export function Header() {
           <nav className="md:hidden pb-4 flex flex-col gap-4">
             <Link
               to="/quem-somos"
-              className={`font-heading uppercase hover:text-secondary-300 transition ${location.pathname === '/quem-somos' ? 'text-secondary-400' : ''}`}
+              className={`font-heading uppercase hover:text-secondary-300 transition tracking-wider ${location.pathname === '/quem-somos' ? 'text-secondary-400' : ''}`}
               onClick={() => setMobileMenuOpen(false)}
             >
               Quem Somos
             </Link>
             <Link
               to="/timeline"
-              className={`font-heading uppercase hover:text-secondary-300 transition ${location.pathname === '/timeline' ? 'text-secondary-400' : ''}`}
+              className={`font-heading uppercase hover:text-secondary-300 transition tracking-wider ${location.pathname === '/timeline' ? 'text-secondary-400' : ''}`}
               onClick={() => setMobileMenuOpen(false)}
             >
               Linha do Tempo
             </Link>
             <Link
               to="/eventos"
-              className={`font-heading uppercase hover:text-secondary-300 transition ${location.pathname === '/eventos' ? 'text-secondary-400' : ''}`}
+              className={`font-heading uppercase hover:text-secondary-300 transition tracking-wider ${location.pathname === '/eventos' ? 'text-secondary-400' : ''}`}
               onClick={() => setMobileMenuOpen(false)}
             >
               Eventos
             </Link>
             <Link
               to="/blog"
-              className={`font-heading uppercase hover:text-secondary-300 transition ${location.pathname === '/blog' ? 'text-secondary-400' : ''}`}
+              className={`font-heading uppercase hover:text-secondary-300 transition tracking-wider ${location.pathname === '/blog' ? 'text-secondary-400' : ''}`}
               onClick={() => setMobileMenuOpen(false)}
             >
               Blog
             </Link>
             <Link
               to="/contato"
-              className={`font-heading uppercase hover:text-secondary-300 transition ${location.pathname === '/contato' ? 'text-secondary-400' : ''}`}
+              className={`font-heading uppercase hover:text-secondary-300 transition tracking-wider ${location.pathname === '/contato' ? 'text-secondary-400' : ''}`}
               onClick={() => setMobileMenuOpen(false)}
             >
               Contato

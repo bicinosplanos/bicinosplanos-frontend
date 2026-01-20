@@ -30,8 +30,10 @@ export default function Home() {
       
       <main className="min-h-screen">
         {/* Hero Section */}
-        <section className="bg-gradient-to-br from-primary-600 to-primary-800 text-white min-h-screen flex items-center py-20 md:py-32">
-          <div className="container mx-auto px-4">
+        <section className="relative bg-gradient-to-br from-primary-600 to-primary-800 text-white min-h-screen flex items-center py-20 md:py-32">
+          <div className="absolute inset-0 bg-cover bg-center opacity-20" style={{ backgroundImage: 'url(/logo.png)' }}></div>
+          <div className="absolute inset-0 bg-gradient-to-br from-primary-600/90 to-primary-800/90"></div>
+          <div className="container mx-auto px-4 relative z-10">
             <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12">
               <div className="flex-1 text-left">
                 <h1 className="font-heading text-6xl leading-tight md:text-7xl mb-4 md:mb-6 uppercase">
