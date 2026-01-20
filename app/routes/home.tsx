@@ -10,7 +10,7 @@ export function meta({}: Route.MetaArgs) {
 export default function Home() {
   return (
     <div>
-      <h1>Bici nos Planos</h1>
+      <h1>Bici nos Planos - site</h1>
     </div>
   );
 }
