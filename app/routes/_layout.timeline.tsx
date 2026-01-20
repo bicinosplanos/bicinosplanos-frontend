@@ -154,20 +154,30 @@ export default function Timeline() {
         </section>
 
         {/* Call to Action */}
-        <section className="mt-16 bg-gradient-to-r from-primary-600 to-primary-700 text-white p-8 md:p-12 rounded-lg text-center">
-          <h3 className="font-heading text-2xl md:text-3xl uppercase mb-4">
-            Faça Parte da Nossa História
-          </h3>
-          <p className="font-body text-lg mb-6 max-w-2xl mx-auto">
-            Nossa trajetória continua sendo escrita todos os dias. 
-            Junte-se a nós e ajude a construir cidades mais humanas e sustentáveis.
-          </p>
-          <a
-            href="/contato"
-            className="inline-block bg-secondary-500 hover:bg-secondary-600 active:bg-secondary-700 text-neutral-900 px-8 py-4 rounded-lg font-bold transition cursor-pointer"
-          >
-            Entre em Contato
-          </a>
+        <section className="mt-16 relative overflow-hidden rounded-lg">
+          <div className="absolute inset-0 bg-gradient-to-r from-primary-600 to-primary-700"></div>
+          <div className="absolute inset-0 opacity-10">
+            <img 
+              src="https://images.unsplash.com/photo-1571068316344-75bc76f77890?w=1200&q=80" 
+              alt="" 
+              className="w-full h-full object-cover"
+            />
+          </div>
+          <div className="relative z-10 text-white p-8 md:p-16 text-center">
+            <h3 className="font-heading text-3xl md:text-4xl uppercase mb-4">
+              Faça Parte da Nossa História
+            </h3>
+            <p className="font-body text-lg md:text-xl mb-8 max-w-2xl mx-auto text-primary-50">
+              Nossa trajetória continua sendo escrita todos os dias. 
+              Junte-se a nós e ajude a construir cidades mais humanas e sustentáveis.
+            </p>
+            <a
+              href="/contato"
+              className="inline-block bg-secondary-500 hover:bg-secondary-600 active:bg-secondary-700 text-neutral-900 px-10 py-4 rounded-lg font-bold text-lg transition cursor-pointer shadow-lg hover:shadow-xl"
+            >
+              Entre em Contato
+            </a>
+          </div>
         </section>
       </div>
     </>

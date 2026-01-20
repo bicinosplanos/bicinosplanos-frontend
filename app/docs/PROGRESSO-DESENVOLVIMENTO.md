@@ -32,7 +32,7 @@
 - [x] Home (página inicial) ✅
 - [x] Quem Somos / Ideologia ✅
 - [x] Linha do Tempo ✅
-- [ ] Eventos e Ações
+- [x] Eventos e Ações ✅
 - [ ] Blog / Notícias
 - [ ] Galeria
 - [ ] Contato / Participação
@@ -276,12 +276,12 @@
 ## 📊 Progresso Geral
 
 **Total de Tarefas:** 120+
-**Concluídas:** 24
-**Progresso:** ~20%
+**Concluídas:** 25
+**Progresso:** ~21%
 
 ### Status por Sprint
 - ✅ Sprint 0: 80% (10/12)
-- ⏳ Sprint 1: 70% (14/20)
+- ⏳ Sprint 1: 75% (15/20)
 - ⏳ Sprint 2: 0% (0/6)
 - ⏳ Sprint 3: 0% (0/7)
 - ⏳ Sprint 4: 0% (0/25)

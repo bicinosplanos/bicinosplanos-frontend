@@ -282,10 +282,9 @@ export function NomeComponente({ ...props }: NomeComponenteProps) {
 
 1. **Criar arquivo** em `app/routes/_layout.nome-da-pagina.tsx`
 2. **Registrar rota** em `app/routes.ts`
-3. **Reiniciar servidor** (npm run dev)
-4. **Atualizar progresso** em PROGRESSO-DESENVOLVIMENTO.md
+3. **Atualizar progresso** em PROGRESSO-DESENVOLVIMENTO.md
 
-## Estrutura obrigatória:
+### Estrutura obrigatória:
 
 ```tsx
 import type { MetaFunction } from "react-router";
@@ -317,7 +316,7 @@ export default function NomeDaPagina() {
 
 ```tsx
 export default [
-  index("routes/home.tsx"),
+  index("routes/_index.tsx"),
   layout("routes/_layout.tsx", [
     route("nome-da-pagina", "routes/_layout.nome-da-pagina.tsx"),
   ]),
@@ -328,7 +327,6 @@ export default [
 ## Nunca:
 
 - ❌ Criar página sem registrar em routes.ts
-- ❌ Esquecer de reiniciar o servidor
 - ❌ Omitir PageBanner e Breadcrumb
 - ❌ Esquecer meta tags SEO
 - ❌ Não atualizar o progresso
