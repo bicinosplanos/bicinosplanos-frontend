@@ -1,6 +1,5 @@
 import type { MetaFunction } from "react-router";
 import { Instagram, Mail, Globe, Users, Clock, Calendar, BookOpen, Image } from "lucide-react";
-import { Footer } from "~/components/Footer";
 
 export const meta: MetaFunction = () => {
   return [
@@ -137,7 +136,6 @@ export default function Links() {
           </div>
         </div>
       </div>
-      <Footer />
     </>
   );
 }

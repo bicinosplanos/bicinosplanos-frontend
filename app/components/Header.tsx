@@ -8,6 +8,8 @@ export function Header() {
   const location = useLocation();
   const isHome = location.pathname === '/';
 
+  if (location.pathname === '/links') return null;
+
   useEffect(() => {
     if (!isHome) return;
     
