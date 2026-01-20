@@ -1509,6 +1509,10 @@ Isso aqui **já é padrão de projeto sério**, pronto para:
 
 # Inserir todos links relevantes aqui (Documentos, Drive, Fotos..)
 
+0. # Progresso do Desenvolvimento
+
+   [Ver Progresso Completo](PROGRESSO-DESENVOLVIMENTO.md)
+
 1. # Documentação do Site Bici Nos Planos MS
 
    [https://docs.google.com/document/d/1FvFAikceUFrrIaOJSbjWlNslWxaDVuBF4l7iifIE1aY/edit?usp=sharing](https://docs.google.com/document/d/1FvFAikceUFrrIaOJSbjWlNslWxaDVuBF4l7iifIE1aY/edit?usp=sharing)                       
