@@ -1,1 +1,48 @@
 @import "tailwindcss";
+
+@theme {
+  --font-heading: "Anton", sans-serif;
+  --font-body: "Raleway", sans-serif;
+  
+  /* Paleta Principal - Verde */
+  --color-primary-50: #e6f5f4;
+  --color-primary-100: #b3e0dd;
+  --color-primary-200: #80cbc6;
+  --color-primary-300: #4db6af;
+  --color-primary-400: #339d96;
+  --color-primary-500: #258480;
+  --color-primary-600: #1f6d6a;
+  --color-primary-700: #195654;
+  --color-primary-800: #133f3e;
+  --color-primary-900: #0d2828;
+  
+  /* Paleta Secundária - Amarelo/Verde */
+  --color-secondary-50: #fafce8;
+  --color-secondary-100: #f2f7b8;
+  --color-secondary-200: #eaf288;
+  --color-secondary-300: #e2ed58;
+  --color-secondary-400: #dde542;
+  --color-secondary-500: #D9DD72;
+  --color-secondary-600: #c4c85e;
+  --color-secondary-700: #9a9d4a;
+  --color-secondary-800: #707236;
+  --color-secondary-900: #464722;
+  
+  /* Paleta Neutra - Azul Escuro */
+  --color-neutral-50: #e3e5e7;
+  --color-neutral-100: #b0b5ba;
+  --color-neutral-200: #7d858d;
+  --color-neutral-300: #4a5560;
+  --color-neutral-400: #283a47;
+  --color-neutral-500: #101F2E;
+  --color-neutral-600: #0d1a26;
+  --color-neutral-700: #0a141e;
+  --color-neutral-800: #070f16;
+  --color-neutral-900: #04090e;
+  
+  /* Cores Funcionais */
+  --color-success: #22c55e;
+  --color-warning: #f59e0b;
+  --color-error: #ef4444;
+  --color-info: #3b82f6;
+}
