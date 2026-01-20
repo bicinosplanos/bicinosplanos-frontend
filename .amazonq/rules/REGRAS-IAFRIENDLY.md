@@ -345,16 +345,23 @@ export default [
 
 ---
 
-# Atalhos de Commit
+# Atalhos de Produtividade
 
-## Atalhos disponíveis para Git
+## Atalhos disponíveis
 
 **Quando o usuário solicitar:**
 
+### Atalhos de Git
 - **cc** → Commit completo e detalhado
 - **cs** → Commit simples
 - **ccp** → Commit completo detalhado com push
 - **csp** → Commit simples com push
+
+### Atalhos de Desenvolvimento
+- **dc** → Desenvolvimento Continuar (consulta `/app/docs/PROGRESSO-DESENVOLVIMENTO.md` e sugere próxima tarefa pendente)
+- **ap** → Atualizar Progresso (abre `/app/docs/PROGRESSO-DESENVOLVIMENTO.md` para atualização)
+- **ad** → Atualizar Documentação (abre `/app/docs/DOCUMENTACAO-GERAL.md` para atualização)
+- **la** → Listar Atalhos (exibe todos os atalhos disponíveis)
 
 ## Comportamento:
 
@@ -391,6 +398,32 @@ git add .
 git commit -m "feat: descrição breve"
 git push
 ```
+
+### dc (Desenvolvimento Continuar)
+1. Consultar `/app/docs/PROGRESSO-DESENVOLVIMENTO.md`
+2. Identificar próxima tarefa pendente
+3. Sugerir implementação da próxima funcionalidade
+4. Perguntar ao usuário se deseja prosseguir
+
+### ap (Atualizar Progresso)
+1. Abrir `/app/docs/PROGRESSO-DESENVOLVIMENTO.md`
+2. Identificar tarefas concluídas recentemente
+3. Marcar como `[x]` as tarefas finalizadas
+4. Atualizar percentuais de progresso das Sprints
+5. Atualizar progresso geral do projeto
+
+### ad (Atualizar Documentação)
+1. Abrir `/app/docs/DOCUMENTACAO-GERAL.md`
+2. Adicionar/atualizar documentação de componentes criados
+3. Documentar novas funcionalidades
+4. Atualizar exemplos de uso
+5. Manter documentação sincronizada com o código
+
+### la (Listar Atalhos)
+1. Exibir lista completa de todos os atalhos disponíveis
+2. Mostrar descrição de cada atalho
+3. Agrupar por categoria (Git, Desenvolvimento)
+4. Formato claro e organizado
 
 ## Padrões de mensagem:
 

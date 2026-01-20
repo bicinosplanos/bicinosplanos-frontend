@@ -1,4 +1,5 @@
 import { Link } from "react-router";
+import { Heart } from "lucide-react";
 
 export function Footer() {
   return (
@@ -61,6 +62,12 @@ export function Footer() {
         
         <div className="border-t border-neutral-800 mt-6 pt-6 text-center text-xs text-neutral-400">
           <p>© 2026 Bici nos Planos MS - Coletivo de Cicloativismo do MS</p>
+          <p className="mt-2 flex items-center justify-center gap-1">
+            Feito com <Heart className="w-3 h-3 fill-blue-900" /> por{" "}
+            <a href="https://italosergio.com.br" target="_blank" rel="noopener noreferrer" className="hover:text-primary-300 transition">
+              italosergio.com.br
+            </a>
+          </p>
         </div>
       </div>
     </footer>

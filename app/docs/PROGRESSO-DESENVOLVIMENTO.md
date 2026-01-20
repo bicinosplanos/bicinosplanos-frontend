@@ -12,6 +12,8 @@
 - [x] Tema Tailwind customizado
 - [x] Documentação inicial criada
 - [x] Documentação de integração com backend criada
+- [x] Regras para IA (REGRAS-IAFRIENDLY.md) criadas ✅
+- [x] Atalhos de produtividade documentados ✅
 
 ---
 
@@ -244,6 +246,7 @@
 - [ ] Guia de desenvolvimento
 - [ ] Documentação de integração com API
 - [ ] Variáveis de ambiente documentadas
+- [ ] Revisar tipagem do código (TypeScript)
 
 ### Documentação de Uso
 - [ ] Manual do admin
@@ -275,12 +278,12 @@
 
 ## 📊 Progresso Geral
 
-**Total de Tarefas:** 120+
-**Concluídas:** 30
-**Progresso:** ~25%
+**Total de Tarefas:** 123
+**Concluídas:** 32
+**Progresso:** ~26%
 
 ### Status por Sprint
-- ✅ Sprint 0: 80% (10/12)
+- ✅ Sprint 0: 86% (12/14)
 - ✅ Sprint 1: 100% (20/20)
 - ⏳ Sprint 2: 0% (0/6)
 - ⏳ Sprint 3: 0% (0/7)
@@ -293,7 +296,7 @@
 - ⏳ Sprint 10: 0% (0/4)
 - ⏳ Sprint 11: 0% (0/7)
 - ⏳ Sprint 12: 0% (0/6)
-- ⏳ Sprint 13: 0% (0/8)
+- ⏳ Sprint 13: 0% (0/9)
 - ⏳ Sprint 14: 0% (0/10)
 
 ---
@@ -303,5 +306,4 @@
 1. [ ] Criar service layer para API
 2. [ ] Configurar variáveis de ambiente
 3. [ ] Criar mock data para desenvolvimento
-4. [ ] Implementar sitemap e robots.txt
-5. [ ] Otimizar imagens e lazy loading
+4. [ ] Otimizar imagens e lazy loading

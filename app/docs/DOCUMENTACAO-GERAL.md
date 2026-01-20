@@ -457,6 +457,74 @@ SUMÁRIO
 
 ## ⚠️ REGRAS DE DESENVOLVIMENTO
 
+### 🤖 Uso de IA no Desenvolvimento
+
+**Este projeto possui regras específicas para assistentes de IA (LLMs).**
+
+**Arquivo de regras:** `.amazonq/rules/REGRAS-IAFRIENDLY.md`
+
+**Como usar:**
+1. Ao trabalhar com assistentes de IA (Amazon Q, ChatGPT, Claude, etc.)
+2. Referencie o arquivo de regras usando `@REGRAS-IAFRIENDLY.md`
+3. A IA seguirá automaticamente os padrões do projeto
+
+**O que as regras incluem:**
+- Desenvolvimento responsivo (mobile-first)
+- Padrões de ícones (Lucide React)
+- Atualização de documentação
+- Identidade visual
+- SEO e meta tags
+- Componentização
+- Criação de páginas
+- Atalhos de produtividade
+
+**Atalhos disponíveis:**
+- `cc` - Commit completo e detalhado
+- `cs` - Commit simples
+- `ccp` - Commit completo com push
+- `csp` - Commit simples com push
+- `dc` - Desenvolvimento Continuar (consulta PROGRESSO-DESENVOLVIMENTO.md e sugere próxima tarefa pendente)
+- `ap` - Atualizar Progresso (abre PROGRESSO-DESENVOLVIMENTO.md para atualização)
+- `ad` - Atualizar Documentação (abre DOCUMENTACAO-GERAL.md para atualização)
+- `la` - Listar Atalhos (exibe todos os atalhos disponíveis)
+
+*Mais atalhos serão adicionados ao longo do desenvolvimento.*
+
+---
+
+### 📋 Gerenciamento de Progresso
+
+**Arquivo:** `app/docs/PROGRESSO-DESENVOLVIMENTO.md`
+
+**Como usar:**
+
+1. **Usar o arquivo original:**
+   - O arquivo já contém o escopo completo do projeto
+   - Marque tarefas como concluídas usando `[x]`
+   - Atualize os percentuais de progresso
+
+2. **Criar escopo personalizado:**
+   - Você pode modificar o arquivo para seu próprio escopo
+   - Adicione/remova tarefas conforme necessário
+   - Mantenha a estrutura de checkboxes `[ ]` e `[x]`
+   - O atalho `dc` funcionará com qualquer estrutura
+
+**Exemplo de uso:**
+```markdown
+## Sprint 1 - Páginas Básicas (40% concluído)
+- [x] Home
+- [x] Quem Somos
+- [ ] Contato
+- [ ] Eventos
+```
+
+**Importante:**
+- Sempre atualize o progresso ao concluir tarefas
+- O atalho `dc` identifica automaticamente tarefas pendentes `[ ]`
+- Funciona com qualquer estrutura de tarefas que você criar
+
+---
+
 ### Criação de Novas Páginas
 **SEMPRE seguir este fluxo ao criar uma nova página.**
 
