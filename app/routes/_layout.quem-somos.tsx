@@ -71,7 +71,7 @@ export default function QuemSomos() {
               title="Propósito"
               description="Lutamos por cidades mais humanas, sustentáveis e democráticas para todas as pessoas."
               icon={<Target className="w-10 h-10" />}
-              variant="accent"
+              variant="secondary"
             />
             <Card
               title="Paixão"
