@@ -238,3 +238,35 @@ export function NomeComponente({ ...props }: NomeComponenteProps) {
 - ❌ Duplicar código que poderia ser componentizado
 - ❌ Esquecer de marcar no progresso
 - ❌ Omitir tipagem TypeScript
+
+
+---
+
+# ⚠️ REGRA OBRIGATÓRIA: Ordem PageBanner e Breadcrumb
+
+## SEMPRE usar a ordem correta
+
+**Padrão obrigatório em páginas internas:**
+
+```tsx
+<>
+  <PageBanner title="Título" subtitle="Subtítulo" />
+  <Breadcrumb />
+  
+  <div className="container mx-auto px-4 py-12">
+    {/* Conteúdo da página */}
+  </div>
+</>
+```
+
+## Ordem correta:
+
+1. ✅ **PageBanner** (banner com título e subtítulo)
+2. ✅ **Breadcrumb** (navegação hierárquica)
+3. ✅ **Conteúdo** (container com conteúdo da página)
+
+## Nunca:
+
+- ❌ Colocar Breadcrumb antes do PageBanner
+- ❌ Omitir o Breadcrumb em páginas internas
+- ❌ Omitir o PageBanner em páginas internas

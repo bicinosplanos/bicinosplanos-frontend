@@ -26,11 +26,11 @@ export const meta: MetaFunction = () => {
 export default function QuemSomos() {
   return (
     <>
-      <Breadcrumb />
       <PageBanner 
         title="Quem Somos" 
         subtitle="Conheça nossa história, missão e valores"
       />
+      <Breadcrumb />
       
       <div className="container mx-auto px-4 py-12">
         {/* Introdução */}
