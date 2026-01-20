@@ -6,7 +6,7 @@ export function Footer() {
       <div className="container mx-auto px-4 py-12">
         <div className="grid md:grid-cols-3 gap-8">
           <div>
-            <h3 className="font-heading text-xl mb-4">Bici nos Planos</h3>
+            <h3 className="font-heading text-xl mb-4 uppercase">Bici nos Planos MS</h3>
             <p className="text-neutral-300 text-sm">
               Coletivo de cicloativismo do Mato Grosso do Sul
             </p>
@@ -39,7 +39,7 @@ export function Footer() {
         </div>
         
         <div className="border-t border-neutral-800 mt-8 pt-8 text-center text-sm text-neutral-400">
-          <p>© 2024 Bici nos Planos - Coletivo de Cicloativismo do MS</p>
+          <p>© 2024 Bici nos Planos MS - Coletivo de Cicloativismo do MS</p>
         </div>
       </div>
     </footer>

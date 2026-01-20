@@ -6,8 +6,8 @@ export function Header() {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           <Link to="/" className="flex items-center gap-3">
-            <img src="/logo.png" alt="Bici nos Planos" className="h-12 w-12" />
-            <span className="font-heading text-2xl">Bici nos Planos</span>
+            <img src="/logo.png" alt="Bici nos Planos MS" className="h-12 w-12" />
+            <span className="font-heading text-2xl uppercase">Bici nos Planos MS</span>
           </Link>
           
           <nav className="hidden md:flex gap-6">
