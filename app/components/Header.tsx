@@ -1,9 +1,10 @@
-import { Link } from "react-router";
+import { Link, useLocation } from "react-router";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 
 export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const location = useLocation();
 
   return (
     <header className="bg-primary-600 text-white sticky top-0 z-50 shadow-md">
@@ -15,19 +16,19 @@ export function Header() {
           </Link>
           
           <nav className="hidden md:flex gap-6">
-            <Link to="/quem-somos" className="hover:text-secondary-300 transition font-bold">
+            <Link to="/quem-somos" className={`font-heading uppercase hover:text-secondary-300 transition text-sm ${location.pathname === '/quem-somos' ? 'text-secondary-400 border-b-2 border-secondary-400' : ''}`}>
               Quem Somos
             </Link>
-            <Link to="/timeline" className="hover:text-secondary-300 transition font-bold">
+            <Link to="/timeline" className={`font-heading uppercase hover:text-secondary-300 transition text-sm ${location.pathname === '/timeline' ? 'text-secondary-400 border-b-2 border-secondary-400' : ''}`}>
               Linha do Tempo
             </Link>
-            <Link to="/eventos" className="hover:text-secondary-300 transition font-bold">
+            <Link to="/eventos" className={`font-heading uppercase hover:text-secondary-300 transition text-sm ${location.pathname === '/eventos' ? 'text-secondary-400 border-b-2 border-secondary-400' : ''}`}>
               Eventos
             </Link>
-            <Link to="/blog" className="hover:text-secondary-300 transition font-bold">
+            <Link to="/blog" className={`font-heading uppercase hover:text-secondary-300 transition text-sm ${location.pathname === '/blog' ? 'text-secondary-400 border-b-2 border-secondary-400' : ''}`}>
               Blog
             </Link>
-            <Link to="/contato" className="hover:text-secondary-300 transition font-bold">
+            <Link to="/contato" className={`font-heading uppercase hover:text-secondary-300 transition text-sm ${location.pathname === '/contato' ? 'text-secondary-400 border-b-2 border-secondary-400' : ''}`}>
               Contato
             </Link>
           </nav>
@@ -44,35 +45,35 @@ export function Header() {
           <nav className="md:hidden pb-4 flex flex-col gap-4">
             <Link
               to="/quem-somos"
-              className="hover:text-secondary-300 transition font-bold"
+              className={`font-heading uppercase hover:text-secondary-300 transition ${location.pathname === '/quem-somos' ? 'text-secondary-400' : ''}`}
               onClick={() => setMobileMenuOpen(false)}
             >
               Quem Somos
             </Link>
             <Link
               to="/timeline"
-              className="hover:text-secondary-300 transition font-bold"
+              className={`font-heading uppercase hover:text-secondary-300 transition ${location.pathname === '/timeline' ? 'text-secondary-400' : ''}`}
               onClick={() => setMobileMenuOpen(false)}
             >
               Linha do Tempo
             </Link>
             <Link
               to="/eventos"
-              className="hover:text-secondary-300 transition font-bold"
+              className={`font-heading uppercase hover:text-secondary-300 transition ${location.pathname === '/eventos' ? 'text-secondary-400' : ''}`}
               onClick={() => setMobileMenuOpen(false)}
             >
               Eventos
             </Link>
             <Link
               to="/blog"
-              className="hover:text-secondary-300 transition font-bold"
+              className={`font-heading uppercase hover:text-secondary-300 transition ${location.pathname === '/blog' ? 'text-secondary-400' : ''}`}
               onClick={() => setMobileMenuOpen(false)}
             >
               Blog
             </Link>
             <Link
               to="/contato"
-              className="hover:text-secondary-300 transition font-bold"
+              className={`font-heading uppercase hover:text-secondary-300 transition ${location.pathname === '/contato' ? 'text-secondary-400' : ''}`}
               onClick={() => setMobileMenuOpen(false)}
             >
               Contato
