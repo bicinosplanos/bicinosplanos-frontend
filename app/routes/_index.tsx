@@ -1,6 +1,6 @@
 import type { Route } from "./+types/home";
 import { Link } from "react-router";
-import { HomeHeader } from "../components/HomeHeader";
+import { Header } from "../components/Header";
 import { Footer } from "../components/Footer";
 import { Bike, Leaf, Users } from "lucide-react";
 
@@ -26,11 +26,11 @@ export function meta({}: Route.MetaArgs) {
 export default function Home() {
   return (
     <>
-      <HomeHeader />
+      <Header />
       
       <main className="min-h-screen">
         {/* Hero Section */}
-        <section className="relative bg-gradient-to-br from-primary-600 to-primary-800 text-white min-h-screen flex items-center py-20 md:py-32">
+        <section className="relative bg-gradient-to-br from-primary-600 to-primary-800 text-white h-screen flex items-center">
           <div className="absolute inset-0 bg-cover bg-center opacity-20" style={{ backgroundImage: 'url(/logo.png)' }}></div>
           <div className="absolute inset-0 bg-gradient-to-br from-primary-600/90 to-primary-800/90"></div>
           <div className="container mx-auto px-4 relative z-10">

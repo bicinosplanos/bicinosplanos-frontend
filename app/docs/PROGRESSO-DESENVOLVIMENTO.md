@@ -33,15 +33,15 @@
 - [x] Quem Somos / Ideologia ✅
 - [x] Linha do Tempo ✅
 - [x] Eventos e Ações ✅
-- [ ] Blog / Notícias
-- [ ] Galeria
-- [ ] Contato / Participação
+- [x] Blog / Notícias ✅
+- [x] Galeria ✅
+- [x] Contato / Participação ✅
 
 ### SEO e Performance
 - [x] Meta tags configuradas ✅
 - [x] Open Graph tags ✅
-- [ ] Sitemap
-- [ ] Robots.txt
+- [x] Sitemap ✅
+- [x] Robots.txt ✅
 - [ ] Otimização de imagens
 - [ ] Lazy loading
 
@@ -276,12 +276,12 @@
 ## 📊 Progresso Geral
 
 **Total de Tarefas:** 120+
-**Concluídas:** 25
-**Progresso:** ~21%
+**Concluídas:** 30
+**Progresso:** ~25%
 
 ### Status por Sprint
 - ✅ Sprint 0: 80% (10/12)
-- ⏳ Sprint 1: 75% (15/20)
+- ✅ Sprint 1: 100% (20/20)
 - ⏳ Sprint 2: 0% (0/6)
 - ⏳ Sprint 3: 0% (0/7)
 - ⏳ Sprint 4: 0% (0/25)
@@ -301,7 +301,7 @@
 ## 🎯 Próximos Passos Imediatos
 
 1. [ ] Criar service layer para API
-2. [ ] Criar componente Header
-3. [ ] Criar componente Footer
-4. [ ] Criar página Home completa
-5. [ ] Criar mock data para desenvolvimento
+2. [ ] Configurar variáveis de ambiente
+3. [ ] Criar mock data para desenvolvimento
+4. [ ] Implementar sitemap e robots.txt
+5. [ ] Otimizar imagens e lazy loading

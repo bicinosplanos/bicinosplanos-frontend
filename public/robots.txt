@@ -1,0 +1,11 @@
+# robots.txt para Bici nos Planos MS
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://bicinosplanosms.com.br/sitemap.xml
+
+# Disallow admin routes
+Disallow: /admin/
+Disallow: /api/

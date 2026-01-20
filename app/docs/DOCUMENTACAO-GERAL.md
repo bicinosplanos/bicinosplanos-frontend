@@ -579,6 +579,7 @@ import { Menu, Calendar, MapPin } from "lucide-react";
 - Ícones Lucide React (Home, ChevronRight)
 - Responsivo (oculta texto "Início" em mobile)
 - Mapeamento de slugs para nomes amigáveis
+- **Usa font-body (Raleway)** para todos os textos
 
 ```tsx
 import { Breadcrumb } from "~/components/Breadcrumb";
@@ -1807,3 +1808,73 @@ Isso aqui **já é padrão de projeto sério**, pronto para:
 - Centralizado verticalmente
 - Responsivo em todos os breakpoints
 - Hover states em todos os botões e links
+
+---
+
+## Página Blog
+
+**Localização:** `app/routes/_layout.blog.tsx`
+
+**Funcionalidades:**
+- Grid responsivo de posts (1 coluna mobile, 2 tablet, 3 desktop)
+- Cards com imagem, categoria, título, excerpt, data e autor
+- Mock data para desenvolvimento
+- Meta tags completas para SEO
+
+**Ícones utilizados:**
+- Calendar (Lucide React)
+- User (Lucide React)
+
+**Características:**
+- Usa componente PageBanner e Breadcrumb
+- Cards com imagem aspect-ratio 16:9
+- Botão "Ler Mais" em cada card
+- Categorias coloridas (primary-600)
+- Informações de data e autor
+
+---
+
+## Página Galeria
+
+**Localização:** `app/routes/_layout.galeria.tsx`
+
+**Funcionalidades:**
+- Grid responsivo de imagens (1 coluna mobile, 2 tablet, 3 desktop)
+- Hover effect com overlay e título
+- Imagens com aspect-ratio fixo (h-64)
+- Meta tags completas para SEO
+
+**Características:**
+- Usa componente PageBanner e Breadcrumb
+- Efeito de zoom na imagem ao hover
+- Overlay com gradiente escuro ao hover
+- Título aparece ao passar o mouse
+- Shadow e transições suaves
+
+---
+
+## Página Contato
+
+**Localização:** `app/routes/_layout.contato.tsx`
+
+**Funcionalidades:**
+- Layout em 2 colunas (1 coluna em mobile)
+- Formulário de contato completo
+- Cards com informações de contato
+- Links para redes sociais
+- Call-to-action para eventos
+- Meta tags completas para SEO
+
+**Ícones utilizados:**
+- Mail (Lucide React)
+- MapPin (Lucide React)
+- Instagram (Lucide React)
+- Facebook (Lucide React)
+
+**Características:**
+- Usa componente PageBanner, Breadcrumb e Card
+- Formulário com campos: nome, email, assunto, mensagem
+- Inputs com focus states (ring-primary-500)
+- Botão de envio full-width
+- Cards informativos com ícones
+- Banner de destaque para eventos

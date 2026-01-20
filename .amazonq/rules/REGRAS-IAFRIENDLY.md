@@ -122,7 +122,7 @@ import { Menu, Calendar, MapPin } from "lucide-react";
 ## Fontes permitidas:
 
 - ✅ **Anton** (font-heading) - Títulos, destaques, sempre UPPERCASE
-- ✅ **Raleway** (font-body) - Textos, botões, conteúdo geral
+- ✅ **Raleway** (font-body) - Textos, botões, conteúdo geral, breadcrumbs, navegação
 
 ## Cores permitidas:
 

@@ -61,6 +61,12 @@ export function HomeHeader() {
               Blog
             </Link>
             <Link
+              to="/galeria"
+              className={`font-heading uppercase text-white hover:text-secondary-300 transition text-sm ${location.pathname === '/galeria' ? 'text-secondary-400 border-b-2 border-secondary-400' : ''}`}
+            >
+              Galeria
+            </Link>
+            <Link
               to="/contato"
               className={`font-heading uppercase text-white hover:text-secondary-300 transition text-sm ${location.pathname === '/contato' ? 'text-secondary-400 border-b-2 border-secondary-400' : ''}`}
             >
@@ -107,6 +113,13 @@ export function HomeHeader() {
               onClick={() => setMobileMenuOpen(false)}
             >
               Blog
+            </Link>
+            <Link
+              to="/galeria"
+              className={`font-heading uppercase text-white hover:text-secondary-300 transition ${location.pathname === '/galeria' ? 'text-secondary-400' : ''}`}
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Galeria
             </Link>
             <Link
               to="/contato"
