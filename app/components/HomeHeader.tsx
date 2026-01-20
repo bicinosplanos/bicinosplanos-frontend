@@ -30,7 +30,7 @@ export function HomeHeader() {
             }`}
           >
             <img src="/logo.png" alt="Bici nos Planos MS" className="h-12 w-12" />
-            <span className="font-heading text-2xl uppercase text-white">Bici nos Planos <span className="font-body font-thin">MS</span></span>
+            <span className="font-heading text-2xl uppercase text-white">Bici nos Planos <span className="font-body font-thin text-2xl">MS</span></span>
           </Link>
 
           {/* Desktop Nav */}

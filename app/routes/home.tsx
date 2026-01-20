@@ -25,7 +25,7 @@ export default function Home() {
                 <h1 className="font-heading text-6xl leading-tight md:text-7xl mb-4 md:mb-6 uppercase">
                   <span className="block">Bici</span>
                   <span className="block">nos</span>
-                  <span className="block">Planos <span className="font-body font-thin">MS</span></span>
+                  <span className="block">Planos <span className="font-body font-thin text-7xl md:text-7xl">MS</span></span>
                 </h1>
                 <p className="text-lg sm:text-xl md:text-2xl mb-3 md:mb-4 text-primary-100">
                   Coletivo de cicloativismo do Mato Grosso do Sul
