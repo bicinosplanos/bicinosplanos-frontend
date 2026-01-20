@@ -455,6 +455,22 @@ SUMÁRIO
 3. [README DO PROJETO]()  
 4. [CREDENCIAIS]()
 
+## ⚠️ REGRAS DE DESENVOLVIMENTO
+
+### Ícones
+**SEMPRE usar Lucide React para ícones no projeto.**
+
+- Não usar emojis em componentes
+- Não usar SVGs customizados
+- Não usar outras bibliotecas de ícones
+
+```tsx
+import { Menu, Calendar, MapPin } from "lucide-react";
+<Menu className="w-6 h-6" />
+```
+
+---
+
 # 📄 BASES TÉCNICAS DE CONSTRUÇÃO
 
 # **Arquitetura Final – Front \+ CRM Integrado \+ API**
@@ -1509,9 +1525,14 @@ Isso aqui **já é padrão de projeto sério**, pronto para:
 
 # Inserir todos links relevantes aqui (Documentos, Drive, Fotos..)
 
-0. # Progresso do Desenvolvimento
+## 📚 Documentação do Projeto
 
-   [Ver Progresso Completo](PROGRESSO-DESENVOLVIMENTO.md)
+- [Progresso do Desenvolvimento](PROGRESSO-DESENVOLVIMENTO.md)
+- [Dependências do Projeto](DEPENDENCIAS.md)
+- [Paleta de Cores](PALETA-CORES.md)
+- [Integração com Backend](INTEGRACAO-BACKEND.md)
+
+## 🌐 Links Externos
 
 1. # Documentação do Site Bici Nos Planos MS
 
