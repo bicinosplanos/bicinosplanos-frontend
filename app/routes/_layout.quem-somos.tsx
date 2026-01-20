@@ -29,6 +29,7 @@ export default function QuemSomos() {
       <PageBanner 
         title="Quem Somos" 
         subtitle="Conheça nossa história, missão e valores"
+        image="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80"
       />
       <Breadcrumb />
       

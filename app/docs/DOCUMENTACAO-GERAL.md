@@ -531,6 +531,13 @@ import { Breadcrumb } from "~/components/Breadcrumb";
 **Props:**
 - `title` (obrigatório) - Título da página
 - `subtitle` - Subtítulo opcional
+- `image` - URL da imagem de fundo (opcional)
+
+**Funcionalidades:**
+- Suporte para imagem de fundo com overlay
+- Gradiente verde (primary-600 to primary-700)
+- Imagem com opacidade 20% e overlay escuro
+- Responsivo (py-12 em mobile, py-16 em desktop)
 
 ```tsx
 import { PageBanner } from "~/components/PageBanner";
@@ -538,6 +545,7 @@ import { PageBanner } from "~/components/PageBanner";
 <PageBanner 
   title="Quem Somos" 
   subtitle="Conheça nossa história"
+  image="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80"
 />
 ```
 
