@@ -7,4 +7,5 @@ export default [
     route("identidade", "routes/_layout.identidade.tsx"),
     route("teste", "routes/_layout.teste.tsx"),
   ]),
+  route("*", "routes/$.tsx"),
 ] satisfies RouteConfig;

@@ -26,6 +26,7 @@
 - [x] Componente Card ✅
 - [x] Componente PageBanner ✅
 - [x] Menu mobile responsivo ✅
+- [x] Página 404 ✅
 
 ### Páginas Públicas
 - [x] Home (página inicial) ✅
@@ -275,12 +276,12 @@
 ## 📊 Progresso Geral
 
 **Total de Tarefas:** 120+
-**Concluídas:** 20
-**Progresso:** ~17%
+**Concluídas:** 21
+**Progresso:** ~18%
 
 ### Status por Sprint
 - ✅ Sprint 0: 80% (10/12)
-- ⏳ Sprint 1: 56% (10/18)
+- ⏳ Sprint 1: 61% (11/18)
 - ⏳ Sprint 2: 0% (0/6)
 - ⏳ Sprint 3: 0% (0/7)
 - ⏳ Sprint 4: 0% (0/25)

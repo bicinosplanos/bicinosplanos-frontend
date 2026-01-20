@@ -1,7 +1,27 @@
+import type { MetaFunction } from "react-router";
 import { PageBanner } from "~/components/PageBanner";
 import { Breadcrumb } from "~/components/Breadcrumb";
 import { Card } from "~/components/Card";
 import { Bike, Users, Target, Heart } from "lucide-react";
+
+export const meta: MetaFunction = () => {
+  return [
+    { title: "Quem Somos - Bici nos Planos MS" },
+    { name: "description", content: "Conheça o Bici nos Planos MS, coletivo de cicloativistas do Mato Grosso do Sul que promove a bicicleta como meio de transporte e ferramenta de transformação social." },
+    
+    // Open Graph
+    { property: "og:title", content: "Quem Somos - Bici nos Planos MS" },
+    { property: "og:description", content: "Conheça o Bici nos Planos MS, coletivo de cicloativistas do Mato Grosso do Sul que promove a bicicleta como meio de transporte e ferramenta de transformação social." },
+    { property: "og:image", content: "/logo.png" },
+    { property: "og:type", content: "website" },
+    
+    // Twitter Card
+    { name: "twitter:card", content: "summary_large_image" },
+    { name: "twitter:title", content: "Quem Somos - Bici nos Planos MS" },
+    { name: "twitter:description", content: "Conheça o Bici nos Planos MS, coletivo de cicloativistas do Mato Grosso do Sul que promove a bicicleta como meio de transporte e ferramenta de transformação social." },
+    { name: "twitter:image", content: "/logo.png" },
+  ];
+};
 
 export default function QuemSomos() {
   return (
