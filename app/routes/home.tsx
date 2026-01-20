@@ -8,6 +8,18 @@ export function meta({}: Route.MetaArgs) {
   return [
     { title: "Bici nos Planos MS - Coletivo de Cicloativismo do MS" },
     { name: "description", content: "Promovendo a bicicleta como meio de transporte e ferramenta de transformação social no Mato Grosso do Sul" },
+    
+    // Open Graph
+    { property: "og:title", content: "Bici nos Planos MS - Coletivo de Cicloativismo do MS" },
+    { property: "og:description", content: "Promovendo a bicicleta como meio de transporte e ferramenta de transformação social no Mato Grosso do Sul" },
+    { property: "og:image", content: "/logo.png" },
+    { property: "og:type", content: "website" },
+    
+    // Twitter Card
+    { name: "twitter:card", content: "summary_large_image" },
+    { name: "twitter:title", content: "Bici nos Planos MS - Coletivo de Cicloativismo do MS" },
+    { name: "twitter:description", content: "Promovendo a bicicleta como meio de transporte e ferramenta de transformação social no Mato Grosso do Sul" },
+    { name: "twitter:image", content: "/logo.png" },
   ];
 }
 
