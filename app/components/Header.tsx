@@ -31,13 +31,25 @@ export function Header() {
       }`
     : "flex items-center gap-3";
 
+  const logoImgClass = isHome
+    ? `h-12 w-12 transition-all duration-700 relative z-10 ${
+        scrolled || mobileMenuOpen ? "translate-x-0" : "translate-x-8"
+      }`
+    : "h-12 w-12 relative z-10";
+
+  const logoTextClass = isHome
+    ? `font-heading text-xl sm:text-2xl uppercase text-white transition-all duration-700 relative z-0 ${
+        scrolled || mobileMenuOpen ? "translate-x-0 opacity-100" : "-translate-x-8 opacity-0"
+      }`
+    : "font-heading text-xl sm:text-2xl uppercase text-white relative z-0";
+
   return (
     <header className={headerClass}>
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           <Link to="/" className={logoClass}>
-            <img src="/logo-simplify-sm.png" alt="Bici nos Planos MS" className="h-12 w-12" style={{ filter: 'drop-shadow(4px 4px 2px rgba(0,0,0,0.2))' }} />
-            <span className="font-heading text-xl sm:text-2xl uppercase text-white">Bici nos Planos <span className="font-body font-thin">MS</span></span>
+            <img src="/logo-simplify-sm.png" alt="Bici nos Planos MS" className={logoImgClass} style={{ filter: 'drop-shadow(4px 4px 2px rgba(0,0,0,0.2))' }} />
+            <span className={logoTextClass}>Bici nos Planos <span className="font-body font-thin">MS</span></span>
           </Link>
           
           <nav className="hidden md:flex gap-6">
