@@ -375,8 +375,8 @@ export default [
 
 ### Atalhos de Desenvolvimento
 - **dc** → Desenvolvimento Continuar (consulta `/app/docs/PROGRESSO-DESENVOLVIMENTO.md` e sugere próxima tarefa pendente)
-- **ap** → Atualizar Progresso (abre `/app/docs/PROGRESSO-DESENVOLVIMENTO.md` para atualização)
-- **ad** → Atualizar Documentação (abre `/app/docs/DOCUMENTACAO-GERAL.md` para atualização)
+- **apd** → Atualizar Progresso Desenvolvimento (abre `/app/docs/PROGRESSO-DESENVOLVIMENTO.md` para atualização)
+- **adg** → Atualizar Documentação Geral (abre `/app/docs/DOCUMENTACAO-GERAL.md` para atualização)
 - **la** → Listar Atalhos (exibe todos os atalhos disponíveis)
 
 ## Comportamento:
@@ -421,14 +421,14 @@ git push
 3. Sugerir implementação da próxima funcionalidade
 4. Perguntar ao usuário se deseja prosseguir
 
-### ap (Atualizar Progresso)
+### apd (Atualizar Progresso Desenvolvimento)
 1. Abrir `/app/docs/PROGRESSO-DESENVOLVIMENTO.md`
 2. Identificar tarefas concluídas recentemente
 3. Marcar como `[x]` as tarefas finalizadas
 4. Atualizar percentuais de progresso das Sprints
 5. Atualizar progresso geral do projeto
 
-### ad (Atualizar Documentação)
+### adg (Atualizar Documentação Geral)
 1. Abrir `/app/docs/DOCUMENTACAO-GERAL.md`
 2. Adicionar/atualizar documentação de componentes criados
 3. Documentar novas funcionalidades
