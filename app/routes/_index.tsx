@@ -2,7 +2,7 @@ import type { MetaFunction } from "react-router";
 import { Link } from "react-router";
 import { Header } from "../components/Header";
 import { Footer } from "../components/Footer";
-import { Bike, Leaf, Users } from "lucide-react";
+import { Bike, Leaf, Users, Heart } from "lucide-react";
 
 export const meta: MetaFunction = () => {
   return [
@@ -124,6 +124,27 @@ export default function Home() {
                   Ver Eventos →
                 </Link>
               </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Doações Section */}
+        <section className="py-12 bg-white">
+          <div className="container mx-auto px-4">
+            <div className="max-w-3xl mx-auto text-center">
+              <Heart className="w-12 h-12 mx-auto mb-4 text-primary-600" />
+              <h2 className="font-heading text-3xl md:text-4xl mb-4 uppercase text-neutral-900">
+                Apoie o Coletivo
+              </h2>
+              <p className="text-lg mb-6 text-neutral-600">
+                Sua doação financia nossas ações. Qualquer valor faz a diferença!
+              </p>
+              <Link 
+                to="/doe" 
+                className="inline-block bg-primary-600 text-white px-6 py-3 rounded-lg font-heading uppercase hover:bg-primary-700 transition shadow-lg"
+              >
+                Doar via PIX
+              </Link>
             </div>
           </div>
         </section>
