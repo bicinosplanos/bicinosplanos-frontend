@@ -34,12 +34,10 @@ export default function Home() {
           <div className="absolute inset-0 bg-cover bg-center opacity-20" style={{ backgroundImage: 'url(/logo-hq.png)' }}></div>
           <div className="absolute inset-0 bg-linear-to-br from-primary-600/80 to-primary-800/80"></div>
           <div className="container mx-auto px-4 relative z-10">
-            <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12">
+            <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-12 max-w-5xl mx-auto">
               <div className="flex-1 text-left">
-                <h1 className="font-heading text-6xl leading-tight md:text-7xl mb-4 md:mb-6 uppercase">
-                  <span className="block">Bici</span>
-                  <span className="block">nos</span>
-                  <span className="block">Planos <span className="font-body font-thin text-7xl md:text-7xl">MS</span></span>
+                <h1 className="font-heading text-5xl md:text-7xl mb-4 md:mb-6 uppercase">
+                  Bici nos Planos <span className="font-body font-thin">MS</span>
                 </h1>
                 <p className="text-lg sm:text-xl md:text-2xl mb-3 md:mb-4 text-primary-100">
                   Coletivo de cicloativismo do Mato Grosso do Sul
@@ -47,7 +45,7 @@ export default function Home() {
                 <p className="text-base sm:text-lg mb-6 md:mb-8">
                   Promovendo a bicicleta como meio de transporte e ferramenta de transformação social
                 </p>
-                <div className="flex flex-col sm:flex-row gap-3 md:gap-4 items-center md:items-start">
+                <div className="flex flex-col sm:flex-row gap-3 md:gap-4">
                   <Link to="/quemsomos" className="bg-secondary-500 text-neutral-900 px-6 sm:px-8 py-3 rounded-lg font-semibold hover:bg-secondary-400 transition text-sm sm:text-base w-full sm:w-auto text-center">
                     Conheça o Coletivo
                   </Link>
@@ -55,10 +53,10 @@ export default function Home() {
                     Próximos Eventos
                   </Link>
                 </div>
-                <img src="/logo.png" alt="Bici nos Planos MS" className="w-80 sm:w-96 mx-auto mt-8 md:hidden" />
+                <img src="/logo.png" alt="Bici nos Planos MS" className="w-48 sm:w-64 mx-auto mt-8 md:hidden" />
               </div>
-              <div className="flex-1 hidden md:block">
-                <img src="/logo.png" alt="Bici nos Planos MS" className="w-full max-w-md mx-auto" />
+              <div className="flex-shrink-0 hidden md:block">
+                <img src="/logo.png" alt="Bici nos Planos MS" className="w-64" />
               </div>
             </div>
           </div>
