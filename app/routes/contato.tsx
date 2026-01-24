@@ -161,7 +161,7 @@ export default function Contato() {
                     E-mail
                   </h3>
                   <p className="font-body text-neutral-600">
-                    contato@bicinosplanosms.com.br
+                    bicinosplanosms@gmail.com
                   </p>
                 </div>
               </div>
@@ -172,11 +172,10 @@ export default function Contato() {
                 <MapPin className="w-6 h-6 text-primary-600 flex-shrink-0 mt-1" />
                 <div>
                   <h3 className="font-heading text-lg uppercase text-neutral-800 mb-2">
-                    Localização
+                    WhatsApp
                   </h3>
                   <p className="font-body text-neutral-600">
-                    Campo Grande - MS<br />
-                    Mato Grosso do Sul, Brasil
+                    (81) 99663-5844
                   </p>
                 </div>
               </div>
