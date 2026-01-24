@@ -4,8 +4,8 @@
 
 - [x] Repositório frontend criado (React Router)
 - [ ] Backend API disponível (aguardando)
-- [ ] Variáveis de ambiente configuradas
-- [ ] Deploy Vercel configurado
+- [x] Variáveis de ambiente configuradas ✅
+- [x] Deploy Vercel configurado ✅
 - [x] Identidade visual configurada
 - [x] Paleta de cores criada
 - [x] Fontes Google instaladas (Anton + Raleway)
@@ -286,11 +286,11 @@
 ## 📊 Progresso Geral
 
 **Total de Tarefas:** 125
-**Concluídas:** 34
-**Progresso:** ~27%
+**Concluídas:** 36
+**Progresso:** ~29%
 
 ### Status por Sprint
-- ✅ Sprint 0: 86% (12/14)
+- ✅ Sprint 0: 100% (14/14)
 - ✅ Sprint 1: 100% (22/22)
 - ⏳ Sprint 2: 0% (0/6)
 - ⏳ Sprint 3: 0% (0/7)
@@ -310,7 +310,7 @@
 
 ## 🎯 Próximos Passos Imediatos
 
-1. [ ] Criar service layer para API
-2. [ ] Configurar variáveis de ambiente
+1. [ ] Otimizar imagens e lazy loading
+2. [ ] Criar service layer para API
 3. [ ] Criar mock data para desenvolvimento
-4. [ ] Otimizar imagens e lazy loading
+4. [ ] Configurar types/interfaces para API
