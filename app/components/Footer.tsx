@@ -34,6 +34,9 @@ export function Footer() {
               <Link to="/contato" className="text-neutral-300 hover:text-primary-300 transition text-sm">
                 Contato
               </Link>
+              <Link to="/doe" className="text-neutral-300 hover:text-primary-300 transition text-sm">
+                Doe
+              </Link>
             </div>
           </div>
           
@@ -44,7 +47,7 @@ export function Footer() {
                 Identidade Visual
               </Link>
               <Link to="/teste" className="text-neutral-300 hover:text-primary-300 transition">
-                Página de Teste
+                Página Modelo
               </Link>
             </nav>
           </div>

@@ -70,6 +70,9 @@ export function Header() {
             <Link to="/galeria" className={`font-heading uppercase text-white hover:text-secondary-300 transition text-sm tracking-wider ${location.pathname === '/galeria' ? 'text-secondary-400 border-b-2 border-secondary-400' : ''}`}>
               Galeria
             </Link>
+            <Link to="/doe" className={`font-heading uppercase text-white hover:text-secondary-300 transition text-sm tracking-wider ${location.pathname === '/doe' ? 'text-secondary-400 border-b-2 border-secondary-400' : ''}`}>
+              Doe
+            </Link>
             <Link to="/contato" className={`font-heading uppercase text-white hover:text-secondary-300 transition text-sm tracking-wider ${location.pathname === '/contato' ? 'text-secondary-400 border-b-2 border-secondary-400' : ''}`}>
               Contato
             </Link>
@@ -119,6 +122,13 @@ export function Header() {
               onClick={() => setMobileMenuOpen(false)}
             >
               Galeria
+            </Link>
+            <Link
+              to="/doe"
+              className={`font-heading uppercase text-white hover:text-secondary-300 transition tracking-wider ${location.pathname === '/doe' ? 'text-secondary-400' : ''}`}
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Doe
             </Link>
             <Link
               to="/contato"
