@@ -1,5 +1,6 @@
 import { Link, useLocation } from "react-router";
 import { useState, useEffect } from "react";
+import { OptimizedImage } from "./OptimizedImage";
 import { Menu, X } from "lucide-react";
 
 export function Header() {
@@ -51,7 +52,7 @@ export function Header() {
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between h-20">
             <Link to="/" className={logoClass}>
-              <img src="/logo-simplify-sm.png" alt="Bici nos Planos MS" className={logoImgClass} style={{ filter: 'drop-shadow(4px 4px 2px rgba(0,0,0,0.2))' }} />
+              <OptimizedImage src="/logo-simplify-sm.png" alt="Bici nos Planos MS" className={logoImgClass} style={{ filter: 'drop-shadow(4px 4px 2px rgba(0,0,0,0.2))' }} />
               <span className={logoTextClass}>Bici nos Planos <span className="font-body font-thin">MS</span></span>
             </Link>
             

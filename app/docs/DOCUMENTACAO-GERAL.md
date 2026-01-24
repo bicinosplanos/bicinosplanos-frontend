@@ -710,6 +710,34 @@ import { Menu, Calendar, MapPin } from "lucide-react";
 <Menu className="w-6 h-6" />
 ```
 
+### OptimizedImage
+**Componente de imagem otimizada com lazy loading.**
+
+**Localização:** `app/components/OptimizedImage.tsx`
+
+**Props:**
+- `src` (obrigatório) - URL da imagem
+- `alt` (obrigatório) - Texto alternativo
+- `className` - Classes CSS customizadas
+- `style` - Estilos inline
+
+**Funcionalidades:**
+- Lazy loading nativo do navegador
+- Intersection Observer para carregamento sob demanda
+- Fade-in suave ao carregar
+- Otimização de performance
+- Carrega imagens apenas quando próximas do viewport (50px de margem)
+
+```tsx
+import { OptimizedImage } from "~/components/OptimizedImage";
+
+<OptimizedImage 
+  src="/logo.png" 
+  alt="Logo" 
+  className="w-64"
+/>
+```
+
 ### Breadcrumb
 **Componente de navegação hierárquica.**
 

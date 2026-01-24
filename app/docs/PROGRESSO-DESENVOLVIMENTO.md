@@ -51,13 +51,13 @@
 - [x] Open Graph tags ✅
 - [x] Sitemap ✅
 - [x] Robots.txt ✅
-- [ ] Otimização de imagens
-- [ ] Lazy loading
+- [x] Otimização de imagens ✅
+- [x] Lazy loading ✅
 
 ### Componentes Criados
 - [x] Breadcrumb ✅
 - [x] Card ✅
-- [x] PageBanner ✅
+- [x] OptimizedImage ✅
 
 ---
 
@@ -286,12 +286,12 @@
 ## 📊 Progresso Geral
 
 **Total de Tarefas:** 125
-**Concluídas:** 36
-**Progresso:** ~29%
+**Concluídas:** 39
+**Progresso:** ~31%
 
 ### Status por Sprint
 - ✅ Sprint 0: 100% (14/14)
-- ✅ Sprint 1: 100% (22/22)
+- ✅ Sprint 1: 100% (24/24)
 - ⏳ Sprint 2: 0% (0/6)
 - ⏳ Sprint 3: 0% (0/7)
 - ⏳ Sprint 4: 0% (0/25)
@@ -310,7 +310,7 @@
 
 ## 🎯 Próximos Passos Imediatos
 
-1. [ ] Otimizar imagens e lazy loading
-2. [ ] Criar service layer para API
+1. [ ] Criar service layer para API
+2. [ ] Criar types/interfaces para API
 3. [ ] Criar mock data para desenvolvimento
-4. [ ] Configurar types/interfaces para API
+4. [ ] Implementar tratamento de erros global

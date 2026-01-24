@@ -2,6 +2,7 @@ import type { MetaFunction } from "react-router";
 import { Link } from "react-router";
 import { Header } from "../components/Header";
 import { Footer } from "../components/Footer";
+import { OptimizedImage } from "../components/OptimizedImage";
 import { Bike, Leaf, Users, Heart } from "lucide-react";
 
 export const meta: MetaFunction = () => {
@@ -53,10 +54,10 @@ export default function Home() {
                     Próximos Eventos
                   </Link>
                 </div>
-                <img src="/logo.png" alt="Bici nos Planos MS" className="w-48 sm:w-64 mx-auto mt-8 md:hidden" />
+                <OptimizedImage src="/logo.png" alt="Bici nos Planos MS" className="w-48 sm:w-64 mx-auto mt-8 md:hidden" />
               </div>
               <div className="flex-shrink-0 hidden md:block">
-                <img src="/logo.png" alt="Bici nos Planos MS" className="w-64" />
+                <OptimizedImage src="/logo.png" alt="Bici nos Planos MS" className="w-64" />
               </div>
             </div>
           </div>

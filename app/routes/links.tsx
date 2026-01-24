@@ -1,4 +1,5 @@
 import type { MetaFunction } from "react-router";
+import { OptimizedImage } from "~/components/OptimizedImage";
 import { Instagram, Mail, Globe, Users, Clock, Calendar, BookOpen, Image } from "lucide-react";
 
 export const meta: MetaFunction = () => {
@@ -81,7 +82,7 @@ export default function Links() {
       <div className="min-h-screen bg-gradient-to-br from-primary-500 via-primary-600 to-accent-600 py-8 sm:py-12 px-4">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-8 sm:mb-12">
-            <img 
+            <OptimizedImage 
               src="/logo.png" 
               alt="Bici nos Planos" 
               className="w-24 h-24 sm:w-32 sm:h-32 mx-auto mb-4 sm:mb-6"
@@ -106,7 +107,7 @@ export default function Links() {
                   className="group block bg-white rounded-xl sm:rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 active:scale-95 sm:hover:scale-105"
                 >
                   <div className="relative h-32 sm:h-40 overflow-hidden">
-                    <img 
+                    <OptimizedImage 
                       src={link.image} 
                       alt={link.title}
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
