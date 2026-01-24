@@ -7,8 +7,9 @@ export const SITE_ROUTES = [
   { path: "blog", label: "Blog" },
   { path: "galeria", label: "Galeria" },
   { path: "contato", label: "Contato" },
+  { path: "doe", label: "Doações" },
   { path: "identidade", label: "Identidade Visual" },
-  { path: "teste", label: "Página de Teste" },
+  { path: "teste", label: "Página Modelo" },
   { path: "links", label: "Links" },
 ] as const;
 
