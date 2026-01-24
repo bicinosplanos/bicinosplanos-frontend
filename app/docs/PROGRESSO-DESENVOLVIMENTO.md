@@ -15,6 +15,11 @@
 - [x] Regras para IA (REGRAS-IAFRIENDLY.md) criadas ✅
 - [x] Atalhos de produtividade documentados ✅
 
+**Informações de contato atualizadas:**
+- E-mail: bicinosplanosms@gmail.com
+- WhatsApp: (81) 99663-5844
+- PIX para doações: bicinosplanosms@gmail.com
+
 ---
 
 ## 🎨 Sprint 1 - Frontend Base
@@ -39,6 +44,7 @@
 - [x] Galeria ✅
 - [x] Contato / Participação ✅
 - [x] Linktree (/links) ✅
+- [x] Doações (/doe) ✅
 
 ### SEO e Performance
 - [x] Meta tags configuradas ✅
@@ -279,13 +285,13 @@
 
 ## 📊 Progresso Geral
 
-**Total de Tarefas:** 124
-**Concluídas:** 33
+**Total de Tarefas:** 125
+**Concluídas:** 34
 **Progresso:** ~27%
 
 ### Status por Sprint
 - ✅ Sprint 0: 86% (12/14)
-- ✅ Sprint 1: 100% (21/21)
+- ✅ Sprint 1: 100% (22/22)
 - ⏳ Sprint 2: 0% (0/6)
 - ⏳ Sprint 3: 0% (0/7)
 - ⏳ Sprint 4: 0% (0/25)

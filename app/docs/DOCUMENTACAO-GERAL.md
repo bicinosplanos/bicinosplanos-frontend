@@ -414,7 +414,9 @@ Conteúdos:
 
 * Formulário de contato
 
-* E-mail institucional
+* E-mail institucional: bicinosplanosms@gmail.com
+
+* WhatsApp: (81) 99663-5844
 
 * Redes sociais
 
@@ -427,6 +429,32 @@ Conteúdos:
   * Parcerias
 
   * Apoio institucional
+
+---
+
+### **3.8 Doações**
+
+**Função:** Viabilizar financiamento das ações do coletivo.
+
+Conteúdos:
+
+* Informações sobre doações via PIX
+
+* PIX: bicinosplanosms@gmail.com
+
+* Explicação sobre uso dos recursos:
+
+  * Bicicletadas
+
+  * Oficinas
+
+  * Bicicultura
+
+  * Outras ações do coletivo
+
+* Transparência sobre valores
+
+* Agradecimento aos apoiadores
 
 ---
 
@@ -1992,6 +2020,10 @@ Isso aqui **já é padrão de projeto sério**, pronto para:
 - Cards informativos com ícones
 - Banner de destaque para eventos
 
+**Informações de contato:**
+- E-mail: bicinosplanosms@gmail.com
+- WhatsApp: (81) 99663-5844
+
 ---
 
 ## Página Linktree
@@ -2034,3 +2066,42 @@ Isso aqui **já é padrão de projeto sério**, pronto para:
 - Ideal para bio do Instagram e outras redes sociais
 - URLs das redes sociais devem ser atualizadas com os links reais
 - Pode ser facilmente expandido com mais links
+
+---
+
+## Página Doação
+
+**Localização:** `app/routes/doe.tsx`
+**Rota:** `/doe`
+
+**Funcionalidades:**
+- Página dedicada para receber doações do coletivo
+- Informações sobre PIX para doação
+- Explicação sobre uso dos recursos
+- Design focado em conversão
+- Meta tags completas para SEO
+
+**Ícones utilizados:**
+- Heart (Lucide React) - Doação
+- Bike (Lucide React) - Bicicletadas
+- Wrench (Lucide React) - Oficinas
+- Sprout (Lucide React) - Bicicultura
+- Copy (Lucide React) - Copiar PIX
+
+**Informações de doação:**
+- PIX: bicinosplanosms@gmail.com
+- Aceita qualquer valor
+- Recursos destinados a:
+  - Bicicletadas
+  - Oficinas
+  - Bicicultura
+  - Outras ações do coletivo
+
+**Características:**
+- Usa componente PageBanner e Breadcrumb
+- Card destacado com informações do PIX
+- Botão para copiar chave PIX
+- Grid com destinos dos recursos
+- Call-to-action claro e direto
+- Design responsivo e acessível
+- Mensagem de agradecimento aos apoiadores
